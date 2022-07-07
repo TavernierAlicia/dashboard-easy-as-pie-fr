@@ -1,0 +1,35 @@
+
+</header>
+
+<div class="header">
+    <!------------- Navbar--------------- -->
+
+    <nav class="navbar">
+        <!--------- Logo Container--------- -->
+
+        <div class="logocon" onclick="location.href = 'http:\/\/dashboard.easy-as-pie.fr'">
+            <!-- logo -->
+
+            <div class="logo">
+                <img src="../img/hlogo.png" alt="logo" />
+            </div>
+            <!-- logo text -->
+
+            <div class="logotext hide">
+                <img src="../img/hlogotext.png" alt="text" />
+                <img src="../img/hlogoline.png" alt="lineimg" />
+            </div>
+        </div>
+
+        <div class="links">
+
+            <div class="show" id="menu">
+                <li><a id="menu-home" onclick="app.router.resolve('/');">ACCUEIL</a></li>
+                <li><a  id="menu-menu" onclick="app.router.resolve('/menu');">CARTE</a></li>
+                <li><a  id="menu-settings"  onclick="app.router.resolve('/settings');">RÉGLAGES</a></li>
+                <li><a  id="menu-orders"  onclick="app.router.resolve('/orders');">FACTURES</a></li>
+                <li><a onclick="app.services.logout();">DÉCONNEXION</a></li>
+            </div>
+        </div>
+    </nav>
+</div>

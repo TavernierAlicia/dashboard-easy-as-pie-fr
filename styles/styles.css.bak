@@ -1,0 +1,3924 @@
+/* --------------------- Font ---------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* xxxxxxxxxxxxxxxxxxxxx Font xxxxxxxxxxxxxxxxxxxxxx */
+
+/* ----------------- Color -------------- */
+
+:root {
+  --clr1: #43446e;
+  --clr2: #000000;
+  --clr3: #862a2a;
+  --clr4: #db4a5d;
+  --clr5: #f78587;
+  --clr6: #be4040;
+  --clr7: #171a2f;
+  --clr8: #3a4151;
+  --clr9: #434371;
+  --clr10: #0b1e32;
+  --clr11: #ffffff;
+}
+
+/* xxxxxxxxxxxxxxxxx Color xxxxxxxxxxxxxx */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.popup_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 2;
+}
+/* ------------- Header Styling ----------- */
+
+.header {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  background-color: var(--clr11);
+  position: fixed;
+  z-index: 11;
+  box-shadow: 0 0 4px gray;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 35px;
+  height: 100%;
+}
+
+.logocon {
+  display: flex;
+  height: 100%;
+}
+
+.logo {
+  width: 100px;
+  height: 80px;
+}
+
+.logo img {
+  position: relative;
+  bottom: 35px;
+}
+
+.logotext {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 55px;
+  top: 20px;
+}
+
+.logotext img:nth-child(2) {
+  padding-top: 10px;
+}
+
+.links div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links div li {
+  margin-left: 75px;
+  list-style-type: none;
+}
+
+.links div li a {
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  padding: 5px 5px 8px 5px;
+  border-bottom: 3px solid transparent;
+  color: var(--clr7);
+}
+
+.links div li .active {
+  border-bottom: 3px solid var(--clr1);
+}
+
+/* Show Hide Toggle Classes */
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none !important;
+}
+/* xxxxxxxxxxxxx Header Styling xxxxxxxxxxx */
+
+/* ------------- Main Styling ----------- */
+
+.maincon {
+  padding-top: 10.5rem;
+  overflow-x: hidden;
+}
+.main {
+  width: 100%;
+  min-height: 200vh;
+  background-color: var(--clr9);
+  background-image: url(../img/bg11.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*--------- hero styling banner and hero text------------ */
+
+.herocon {
+  padding-top: 90px;
+}
+
+.herocon .htext {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+  margin-left: 200px;
+}
+
+.herocon .htext h1:nth-child(1) {
+  color: var(--clr10);
+}
+
+.herocon .htext h1:nth-child(2) {
+  color: var(--clr8);
+}
+
+.herocon .htext h1:nth-child(3) {
+  color: var(--clr6);
+}
+
+.herocon .himg {
+  position: relative;
+  left: 475px;
+  bottom: 115px;
+}
+
+.herocon .himg .himgstyle {
+  width: 700px;
+}
+
+/* qrcode component styling */
+
+.qrcon {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 100px;
+  color: var(--clr10);
+}
+
+.qrcon h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.qrimg img {
+  width: 250px;
+  position: relative;
+  left: 175px;
+  top: 25px;
+}
+
+.arrow img {
+  position: relative;
+  top: 65px;
+  right: 35px;
+  width: 275px;
+}
+
+.arrow h1 {
+  position: relative;
+  top: 65px;
+  left: 160px;
+}
+
+.qrtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 400px;
+}
+.qrtext h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.qrtext h1:nth-child(2) {
+  margin-top: 35px;
+  margin-right: 210px;
+  align-self: flex-end;
+}
+/* xxxxxxxxxxxxx Main Styling xxxxxxxxxxx */
+
+/* ------------- Section 1 Styling ----------- */
+
+.section {
+  background-color: var(--clr9);
+  height: 35vh;
+}
+
+.section .sec1 .title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: var(--clr10);
+  color: var(--clr11);
+  position: relative;
+  bottom: 200px;
+  left: 235px;
+}
+
+.section .sec1 .para {
+  color: var(--clr9);
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--clr11);
+  position: relative;
+  bottom: 160px;
+  left: 280px;
+}
+
+.price_component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 155px;
+  left: -30px;
+}
+
+.price_component,
+.signup_con .pricingform {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  bottom: 150px;
+  left: 400px;
+}
+
+.signup_con .pricingform {
+  left: 0px !important;
+}
+.signup_con .pricingform p {
+  color: var(--clr9) !important;
+  font-weight: bold !important;
+}
+
+.price_component .cardcon,
+.signup_con .pricingform .cardcon {
+  display: flex;
+}
+
+.price_component .cardcon .card{
+  padding: 35px 50px !important;
+}
+.price_component .cardcon .card,
+.signup_con .pricingform .cardcon .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  border: 1px solid var(--clr11);
+  border-radius: 8px;
+  padding: 35px 45px;
+  margin: 25px;
+}
+
+.signup_con .pricingform .cardcon .card {
+  position: relative;
+  top: 150px;
+  border: 1px solid var(--clr9);
+  padding: 35px 45px 5px 45px !important;
+}
+
+.price_component .cardcon .card:hover {
+  background-color: var(--clr10);
+  border: 1px solid var(--clr10);
+}
+
+.price_component .cardcon .card p,
+.signup_con .pricingform .cardcon .card p {
+  color: var(--clr11);
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.price_component .cardcon .card p:nth-child(1),
+.signup_con .pricingform .cardcon .card p:nth-child(1) {
+  font-size: 28px;
+}
+
+.price_component .cardcon .card p:nth-child(2),
+.signup_con .pricingform .cardcon .card p:nth-child(2) {
+  font-size: 24px;
+}
+
+.price_component .cardcon .card p:nth-child(3),
+.signup_con .pricingform .cardcon .card p:nth-child(3) {
+  font-size: 18px;
+}
+.price_component .cardcon .card .features p,
+.signup_con .pricingform .cardcon .card .features p {
+  color: var(--clr11);
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+.price_component .cardcon .card .features p span,
+.signup_con .pricingform .cardcon .card .features p span {
+  color: #2edc22;
+  margin-right: 5px;
+}
+
+.price_component .cardcon .card button {
+  border: 1.5px solid var(--clr11);
+  padding: 7px 20px;
+  color: var(--clr11);
+  background-color: transparent;
+  font-size: 12px;
+}
+
+/* xxxxxxxxxxxxx Section1 Styling xxxxxxxxxxx */
+
+/* ------------- Section2 Styling ------------ */
+
+.section2 {
+  width: 100%;
+  height: 150vh;
+  background-color: var(--clr9);
+  background-image: url(/images/bg12.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.section2 .sec2 .title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: var(--clr10);
+  position: relative;
+  top: 400px;
+  left: 230px;
+}
+
+.section2 .sec2 .para {
+  color: var(--clr9);
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--clr9);
+  position: relative;
+  left: 280px;
+  top: 450px;
+}
+
+.btn_component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 550px;
+  gap: 25px;
+}
+
+.btn_component button {
+  padding: 10px 25px;
+  background-color: var(--clr11);
+  border: 2px solid var(--clr9);
+  color: var(--clr2);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.btn_component button:hover {
+  background-color: var(--clr10);
+  color: var(--clr11);
+}
+
+.branding {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 700px;
+}
+
+.branding img {
+  width: 380px;
+}
+
+/* -------------- Section2 Styling xxxxxxxxxxx */
+
+/* ------------- Footer Styling ----------- */
+
+.footer {
+  width: 100%;
+  height: 237px;
+  background-color: var(--clr8);
+  overflow: hidden;
+  color: var(--clr11);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+  z-index: 111;
+}
+
+.ftextcon {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex: 5;
+}
+.footer .title {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.footer .title span {
+  width: 29px;
+  height: 0px;
+  border-bottom: 2px solid var(--clr11);
+  margin-right: 5px;
+}
+
+.icons,
+.address {
+  margin-top: 50px;
+}
+
+.fsocial .icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faddress .address {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.flinks .link {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.flinks .link a {
+  margin-bottom: 5px;
+  color: var(--clr11);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.flogocon {
+  display: flex;
+  justify-content: flex-end;
+  flex: 4;
+}
+
+.flogotext {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 90px;
+  left: 100px;
+}
+
+.flogotext img {
+  width: 140px;
+  height: 94px;
+}
+
+.flogotext img:nth-child(2) {
+  height: 2px;
+  margin-top: 10px;
+}
+
+.flogo {
+  position: relative;
+  top: 15px;
+  right: -25px;
+}
+
+/* xxxxxxxxxxxxx Footer Styling xxxxxxxxxxx */
+
+/* ------------- Contact Styling ----------- */
+
+/* upper section */
+
+.contact_con {
+  width: 100%;
+  min-height: 130vh;
+  background-color: var(--clr9);
+  background-image: url(/images/contactbg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.contact_link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact_link .title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: var(--clr11);
+  margin-bottom: 25px;
+  position: relative;
+  left: 280px;
+  bottom: -10px;
+}
+
+.contact_link .contact_img img {
+  position: relative;
+  top: 30px;
+  right: 160px;
+  width: 500px;
+}
+
+.contact_link .contact_links {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 280px;
+  top: 20px;
+}
+
+/* lower section */
+
+.contact_con .contact_form form {
+  background-color: var(--clr11);
+  width: max-content;
+  padding: 25px 55px;
+  position: relative;
+  left: 455px;
+  top: 23px;
+}
+
+.contact_con .contact_form form .input input,
+.contact_con .contact_form form .message textarea {
+  padding: 10px 25px;
+  border: 1px solid var(--clr9);
+  font-family: "Raleway", sans-serif;
+  border-radius: 5px;
+  outline: none;
+  font-weight: normal;
+  margin: 10px;
+}
+
+.contact_con .contact_form form .btn button {
+  padding: 8px 25px;
+  background-color: var(--clr9);
+  color: var(--clr11);
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+  position: relative;
+  left: 330px;
+  border: 1px solid var(--clr9);
+}
+
+/* xxxxxxxxxxxxx Contact Styling xxxxxxxxxxx */
+
+/* ------------- legal &  Faq Styling ----------- */
+.cont {
+  padding-top: 10rem;
+}
+
+.legal_con {
+  width: 100%;
+  min-height: 130vh;
+  background-color: var(--clr9);
+  background-image: url(/images/legal.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.legal_con .textcon,
+.faq_con .textcon {
+  position: relative;
+  top: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20rem;
+}
+
+.legal_con h1,
+.faq_con h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: var(--clr9);
+  margin: 50px 0;
+}
+
+.faq_con h1 {
+  margin: 50px 140px 50px 0;
+}
+
+.legal_con p,
+.faq_con p {
+  color: var(--clr8);
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.faq_con {
+  width: 100%;
+  min-height: 130vh;
+  background-color: var(--clr9);
+  background-image: url(/images/legal.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.ques {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.ques h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: var(--clr3);
+  font-size: 14px;
+}
+
+.ques span {
+  width: 25px;
+  height: 0px;
+  margin-right: 5px;
+  border-bottom: 2px solid var(--clr8);
+}
+
+.faq_con .textcon .underlined_text {
+  text-align: center;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration: underline;
+  color: var(--clr9);
+  margin-top: 20px;
+}
+
+.faq_con .textcon button {
+  padding: 8px 25px;
+  outline: none;
+  border: 1px solid var(--clr9);
+  background-color: transparent;
+  color: var(--clr9);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+/* xxxxxxxxxxxxx Legal & Faq Styling xxxxxxxxxxx */
+
+/* ------------- login Styling ----------- */
+
+.login_con {
+  width: 100%;
+  height: 75vh;
+  background-color: var(--clr9);
+  background-image: url(/images/loginbg.png);
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.login_con .login,
+.reglages_con .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  right: 110px;
+}
+
+.login_con .login {
+  right: 0px;
+  top: 50px;
+}
+
+.login_con .login h1,
+.reglages_con .login h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--clr10);
+  margin-bottom: 25px;
+}
+.login_con .login form span  {
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+.login_con .login form span:hover {
+  text-decoration: underline;
+}
+
+.login_con .login .btndiv {
+  margin-top: 15px;
+
+}
+
+.login_con .login .btndiv .light  {
+  margin-top: 15px;
+  color: var(--clr9);
+  background-color: white;
+  border: 1px solid var(--clr9);
+}
+
+.reglages_con .login h1 {
+  right: 280px;
+  position: relative;
+  color: var(--clr1);
+}
+
+.reglages_con .login h1 img {
+  margin-bottom: 8px;
+}
+
+.login_con .login form,
+.reglages_con .login form {
+  background-color: var(--clr11);
+  padding: 35px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--clr10);
+}
+
+.reglages_con .login form {
+  padding: 35px 75px;
+}
+
+.login_con .login form label,
+.reglages_con .login form label,
+.reglages_con .popup3 label {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 0 -12px 0;
+  color: var(--clr10);
+}
+
+.login_con .login form input,
+.reglages_con .login form input {
+  padding: 3px 35px 3px 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.reglages_con .login form input {
+  padding: 3px 160px 3px 15px;
+}
+.reglages_con .popup3 input {
+  padding: 8px 100px 8px 15px;
+  margin: 5px 0 25px 0;
+  border: 1px solid var(--clr10);
+  outline: none;
+  border-radius: 3px;
+}
+
+.login_con .login form p,
+.reglages_con .login form p {
+  margin-top: 5px;
+  align-self: flex-end;
+  font-size: 10px;
+  font-family: "Raleway", sans-serif;
+  text-decoration: underline;
+  color: var(--clr9);
+  margin-top: -8px;
+  margin-bottom: 15px;
+}
+
+.login_con .login form button,
+.reglages_con .login form button {
+  padding: 7px 12px;
+  background-color: var(--clr9);
+  border: 1px solid var(--clr9);
+  color: var(--clr11);
+  font-size: 12px;
+  align-self: center;
+}
+
+.reglages_con .login form button {
+  background-color: var(--clr10);
+}
+/* xxxxxxxxxxxxx login Styling xxxxxxxxxxx */
+
+/* ------------- Sigup Styling ----------- */
+
+.signup_con {
+  width: 100%;
+  height: 120vh;
+  background-color: var(--clr9);
+  background-image: url(/images/signupbg.png);
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.signup_con #step .hide {
+  display: none;
+}
+
+.signup_con #step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 150px;
+}
+
+.signup_con #step h1,
+.acc3 .title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--clr10);
+  margin-top: -90px;
+  margin-bottom: 75px;
+}
+
+.acc3 .title,
+.acc2 .title,
+.acc1 .title,
+.acc1 .timeline h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--clr10);
+  margin-top: 25px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.acc2 .title {
+  position: relative;
+  right: 120px;
+  top: 25px;
+}
+.signup_con #step .part1,
+.signup_con #step .part2,
+.signup_con #step .part3,
+.signup_con #step .part4 {
+  background-color: var(--clr11);
+  width: max-content;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  text-align: left;
+  padding: 35px 125px;
+  border: 1px solid var(--clr10);
+}
+
+.signup_con #step .part2 {
+  padding: 35px 10px;
+}
+
+.signup_con #step .part2 .title {
+  left: 150px;
+}
+
+.signup_con #step .title {
+  font-size: 16px;
+  position: relative;
+  right: 25px;
+}
+
+.signup_con #step .radiobtn label,
+.acc2 .radiobtn label {
+  margin-right: 20px;
+  color: var(--clr2);
+  font-weight: normal;
+  font-family: "Raleway", sans-serif;
+}
+
+.signup_con #step .radiobtn p,
+.acc2 .radiobtn p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  margin: 10px 5px -8px 0;
+}
+.signup_con #step label,
+.acc3 label,
+.acc2 label,
+.acc1 label {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 12px;
+  margin: 25px 0 10px 0;
+  color: var(--clr10);
+}
+
+.signup_con #step input,
+.acc3 input,
+.acc2 input,
+.acc1 input {
+  padding: 3px 35px 3px 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.signup_con #step .btndiv,
+.acc3 .btndiv {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup_con #step .btndiv button,
+.acc3 .btndiv button,
+.acc2 button,
+.acc1 .img button,
+.acc1 > button {
+  padding: 7px 25px;
+  font-size: 12px;
+  outline: none;
+  border: 1.5px solid var(--clr10);
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  background-color: var(--clr11);
+}
+.signup_con #step .btndiv button:nth-child(1),
+.acc2 button {
+  background-color: var(--clr11);
+  color: var(--clr10);
+  position: relative;
+  right: 20px;
+}
+.acc2 button {
+  margin: 15px 0 25px 0;
+}
+
+.acc2 .btndiv {
+  display: flex;
+  justify-content: center;
+}
+
+.acc2 .btndiv button,
+.acc1 > button {
+  background-color: var(--clr10);
+  color: var(--clr11);
+}
+
+.acc2 .part1 {
+  border: 1px solid var(--clr10);
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 45px 0;
+}
+.signup_con #step .btndiv button:nth-child(2),
+.acc3 .btndiv button {
+  background-color: var(--clr10);
+  color: var(--clr11);
+  position: relative;
+  left: 20px;
+}
+
+.signup_con #step .part4 .btndiv button {
+  background-color: var(--clr10);
+  color: var(--clr11);
+  margin-left: 20px;
+}
+
+/*-------- popup-------- */
+
+.signup_con #step .part3 .hide,
+.signup_con #step .part4 .hide,
+.home1_con .hide,
+.reglages_con .hide {
+  display: none !important;
+}
+
+.signup_con #step .part3 .popup_small,
+.signup_con #step .part4 .popup_small,
+.home1_con .popup_small,
+.reglages_con .popup_small,
+.carte_con .popup_small {
+  background-color: var(--clr11);
+  width: 700px;
+  padding: 35px 105px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--clr3);
+}
+
+.reglages_con .popup_small,
+.carte_con .popup_small,
+.home1_con .popup_small {
+  top: 55%;
+}
+.signup_con #step .part4 .popup_small,
+.home1_con .popup_small {
+  padding: 45px 100px;
+}
+
+.signup_con #step .part3 .popup_small img,
+.signup_con #step .part4 .popup_small img,
+.reglages_con .popup_small img {
+  width: 15px;
+  margin-bottom: 25px;
+}
+
+.signup_con #step .part4 .popup_small img,
+.home1_con .popup_small img,
+.carte_con .popup_small img {
+  width: 45px;
+  margin-bottom: 15px;
+}
+
+.carte_con .popup_small {
+  padding: 55px 0;
+}
+.carte_con .popup_small > p {
+  padding: 0 280px !important;
+}
+.signup_con #step .part3 .popup_small p,
+.signup_con #step .part4 .popup_small p,
+.home1_con .popup_small p,
+.reglages_con .popup_small p,
+.carte_con .popup_small p {
+  font-size: 12px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+.reglages_con .popup_small p {
+  font-size: 10px;
+  padding: 10px 150px;
+}
+.signup_con #step .part3 .popup_small button,
+.signup_con #step .part4 .popup_small button,
+.home1_con .popup_small button,
+.reglages_con .popup_small .btn button,
+.carte_con .popup_small .btn button {
+  outline: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px 20px 5px 20px;
+  border: 1.5px solid var(--clr7);
+  color: var(--clr7);
+  background-color: var(--clr11);
+  margin-top: 20px;
+}
+.reglages_con .popup_small .btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.reglages_con .popup_small .btn button {
+  padding: 5px 35px;
+  font-size: 10px;
+}
+
+.reglages_con .popup_small h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--clr7);
+  margin-bottom: 15px;
+}
+
+.reglages_con .popup_small .btn button:nth-child(2),
+.carte_con .popup_small .btn button:nth-child(2) {
+  color: var(--clr11);
+  background-color: var(--clr7);
+}
+
+.carte_con .popup_small .btn button {
+  padding: 6px 35px;
+}
+/* xxxxxxxxxxxxx Signup Styling xxxxxxxxxxx */
+
+/* ------------- Invoices Styling ----------- */
+
+.invoices_con {
+  min-height: 140vh;
+  background-color: var(--clr9);
+  background-image: url(/images/invoicebg.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.invoices_con .table_wrapper {
+  max-height: 550px;
+  overflow-y: scroll;
+  margin-top: 120px;
+}
+
+.invoices_con .t2 {
+  overflow: auto;
+  margin: 55px 0 15px 0;
+  width: 100%;
+}
+
+.invoices_con .hide {
+  display: none;
+}
+
+.invoices_con .t2 table td {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.invoices_con .t2 .firstelem {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.invoices_con table {
+  background-color: var(--clr11);
+  border-collapse: collapse;
+  border-spacing: 0 15px;
+}
+
+.invoices_con table thead {
+  background-color: var(--clr10);
+}
+
+.invoices_con table th {
+  padding: 10px 45px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  color: var(--clr11);
+  position: sticky;
+  top: 0px;
+}
+
+.invoices_con table td {
+  padding: 15px 55px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: var(--clr10);
+  position: relative;
+  z-index: 1;
+}
+
+.invoices_con table tbody tr td:nth-child(5) {
+  color: #266e32;
+}
+.invoices_con table .yellow {
+  color: #f2b238 !important;
+}
+
+.invoices_con table .red {
+  color: #c45252 !important;
+}
+
+.invoices_con table td img {
+  width: 18px;
+}
+
+.invoices_con table td img:nth-child(1) {
+  margin-right: 15px;
+}
+
+.invoices_con .date_component {
+  margin-top: 15px;
+  align-self: flex-end;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 220px;
+  gap: 15px;
+}
+
+.invoices_con .date_component .date {
+  display: flex;
+  flex-direction: column;
+}
+
+.invoices_con .date_component label {
+  font-size: 12px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--clr10);
+}
+
+.invoices_con .date_component input {
+  font-size: 12px;
+  padding: 3px;
+  border: 1px solid transparent;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  border-radius: 3px;
+  outline: none;
+  color: var(--clr10);
+}
+
+.invoices_con .date_component button {
+  font-size: 12px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  padding: 5px 15px;
+  color: var(--clr11);
+  background-color: var(--clr10);
+  border: 1.5px solid var(--clr10);
+  position: relative;
+  top: 2px;
+  left: 10px;
+}
+.invoices_con .cs {
+  align-self: flex-end;
+}
+.invoices_con .cs > p {
+  font-size: 9px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: var(--clr10);
+  position: relative;
+  top: 15px;
+  align-self: flex-start;
+}
+
+.invoices_con .icard,
+.accordion_content .icard {
+  background-color: var(--clr11);
+  width: 500px;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--clr10);
+  margin-top: 150px;
+}
+
+.accordion_content .icard {
+  margin-top: 35px;
+}
+.invoices_con .icard p,
+.accordion_content .icard {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--clr10);
+  margin-bottom: 15px;
+}
+.invoices_con .icard p:nth-child(1),
+.accordion_content .icard p:nth-child(1) {
+  font-size: 12px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--clr10);
+}
+
+.invoices_con .icard .btn,
+.accordion_content .icard .btn {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion_content .icard .btn {
+  margin-top: 25px;
+}
+.invoices_con .icard .btn button,
+.accordion_content .icard .btn button {
+  padding: 5px 15px;
+  font-size: 12px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  border: 1.5px solid var(--clr10);
+}
+
+.invoices_con .icard .btn button:nth-child(1),
+.accordion_content .icard .btn button:nth-child(1) {
+  background-color: var(--clr10);
+  color: var(--clr11);
+}
+
+.invoices_con .icard .btn button:nth-child(2),
+.accordion_content .icard .btn button:nth-child(2) {
+  background-color: var(--clr11);
+  color: var(--clr10);
+}
+
+/*----- popup ------*/
+
+.popup_big {
+  font-family: "Raleway", sans-serif;
+  width: max-content;
+  background-color: var(--clr11);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 25px solid var(--clr10) !important;
+  padding: 25px 25px;
+  margin-top: 170px;
+  color: var(--clr10);
+  border: 1px solid var(--clr3);
+  z-index: 2;
+}
+
+.popup_big > * {
+  width: 100%;
+}
+.popup_big .box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.popup_big .box1 h1 {
+  position: relative;
+  top: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+.popup_big .box1 img {
+  position: relative;
+  left: 60px;
+}
+
+.popup_big .box2 {
+  margin-bottom: 45px;
+}
+
+.popup_big .box2 p:nth-child(2) {
+  text-align: right;
+  position: relative;
+  right: 90px;
+}
+.popup_big .iddate {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 35px;
+}
+
+.popup_big .total {
+  margin: 35px 0 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.popup_big .total .ptotal {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup_big > p {
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.popup_big > button {
+  padding: 7px 25px;
+  border: 1.5px solid var(--clr10);
+  width: max-content;
+  background-color: var(--clr10);
+  color: var(--clr11);
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* xxxxxxxxxxxxx Invoices Styling xxxxxxxxxxx */
+
+/* ------------- Reglages Styling ------------ */
+
+.reglages_con {
+  width: 100%;
+  min-height: 75vh;
+  background-color: var(--clr11);
+  background-image: url(/images/reglages.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.reglages_con .login {
+  width: 1550px;
+  height: 75vh;
+  background-color: var(--clr11);
+  background-image: url(/images/reglogin.png);
+  background-position: center;
+  background-size: cover;
+}
+.reglages_con .accordion_con {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+.reglages_con .accordion_con .accordion {
+  width: 80%;
+  margin: 100px 0 75px 0;
+}
+.reglages_con .accordion .accordion_tab {
+  margin-bottom: 50px;
+}
+.reglages_con .accordion .accordion_tab > label {
+  background-color: var(--clr10);
+  color: var(--clr11);
+  padding: 25px;
+  display: block;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reglages_con .accordion .accordion_tab > .accordion_content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  background-color: var(--clr11);
+  width: 100%;
+}
+
+.reglages_con
+  .accordion
+  .accordion_tab
+  > .acc_toggle:checked
+  ~ .accordion_content {
+  max-height: 2000px;
+}
+
+.reglages_con .accordion .accordion_tab > .acc_toggle {
+  display: none;
+}
+
+.reglages_con .accordion .accordion_tab .acc_arrow {
+  font-size: 24px;
+  color: var(--clr11);
+  position: relative;
+  top: 15px;
+  float: right;
+  right: 30px;
+}
+
+.reglages_con .accordion .accordion_tab > .acc_toggle:checked ~ p {
+  top: 30px;
+  transform: rotate(180deg) !important;
+}
+
+.accordion_tab .accordion_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Accordion 1 styling */
+
+.acc1 .title {
+  display: flex;
+  align-self: flex-start;
+  position: relative;
+  right: 35px;
+  margin-bottom: 15px !important;
+}
+.acc1 .timeline h1 {
+  display: flex;
+  align-self: flex-start;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.acc1 .horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+}
+
+.acc1 .tline {
+  padding-bottom: 25px;
+  width: 700px;
+}
+.acc1 .tline #theplanning {
+  width: 100%;
+}
+
+
+.hform {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 22rem;
+}
+
+.acc1 .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* Accordion 3 styling */
+
+.acc3 form {
+  padding: 15px 32px;
+  border: 1px solid var(--clr10);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.acc1 button {
+  margin-bottom: 35px;
+}
+.acc3 .btndiv {
+  margin-bottom: 15px;
+}
+
+.acc3 .img {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.acc3 .img img {
+  width: 250px;
+}
+/* Accordion 4 styling */
+
+.accordion_content .acc4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--clr10);
+  margin-top: 25px;
+}
+
+.acc4 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 44px;
+}
+
+.acc4 h1 {
+  background-color: var(--clr9);
+  color: var(--clr11);
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.acc4 h3 {
+  color: var(--clr10);
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+}
+.acc4 .text .list {
+  display: flex;
+  gap: 30px;
+  margin: 25px 0;
+}
+.text .list p {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.text .list span {
+  color: var(--clr3);
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.acc4 .text > p {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--clr10);
+  margin-top: 8px;
+}
+
+.acc4 .text > p:nth-child(2) {
+  border-bottom: 2px solid var(--clr3);
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+
+.acc4 .btn {
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.acc4 .btn button {
+  outline: none;
+  border: 1.5px solid var(--clr10);
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  padding: 5px 15px;
+  color: var(--clr11);
+  background-color: var(--clr10);
+}
+
+.acc4 .btn button:nth-child(2) {
+  color: var(--clr10);
+  background-color: var(--clr11);
+}
+
+/* popup styling */
+
+.reglages_con .card {
+  border: 1px solid var(--clr9);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border-radius: 5px;
+  padding: 25px 35px;
+}
+
+.reglages_con .card p {
+  width: max-content;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: var(--clr9);
+}
+
+.reglages_con .card .features span {
+  color: #52e248;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.reglages_con .card > p:nth-child(1) {
+  font-size: 34px;
+}
+.reglages_con .card > p:nth-child(2) {
+  font-size: 28px;
+  margin-top: -10px;
+}
+
+.reglages_con .btnbig .btn {
+  display: flex;
+  gap: 50px;
+}
+.reglages_con .btnbig .btn button {
+  padding: 10px 25px;
+  font-size: 12px;
+}
+.reglages_con .btnbig {
+  margin-top: 100px;
+}
+.reglages_con .btnbig > p {
+  margin-bottom: 45px;
+  margin-top: 10px;
+  padding: 0 120px;
+  color: var(--clr8);
+}
+.reglages_con .popup3 {
+  top: 60%;
+}
+.reglages_con .popup3 .btn button:nth-child(2) {
+  padding: 10px 25px;
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+
+.reglages_con .popup3 > p {
+  padding: 10px 120px;
+}
+
+.reglages_con .popup3 > h1 {
+  margin-top: 30px;
+}
+
+/* xxxxxxxxxxxxx Reglages Styling xxxxxxxxxxxx */
+
+/* ------------- carte Styling ------------ */
+
+.carte_con {
+  width: 100%;
+  min-height: 170vh;
+  background-color: var(--clr11);
+  background-image: url(/images/carte1.png);
+  background-position: center;
+  background-size: cover;
+}
+.carte,
+.carte .cardrow .card_con,
+.carte .cardrow .card_con .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.carte .cardrow .card_con {
+  justify-content: flex-start;
+  width: 320px;
+  padding: 10px;
+  height: 800px;
+  overflow-y: scroll;
+}
+
+.carte .cardrow .card_con .heading {
+  background-color: var(--clr7);
+  color: var(--clr11);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 25px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.carte,
+.carte .cardrow {
+  gap: 10px 80px;
+}
+.carte .cardrow .card_con .cards {
+  gap: 20px;
+}
+.carte .cardrow .card_con .cards .card div {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 15px 15px 15px;
+}
+
+.carte .cardrow .card_con .cards .card div > p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.carte .cardrow .card_con .cards .card div > p:nth-child(2) {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  position: relative;
+  bottom: 12px;
+}
+
+.carte .cardrow {
+  display: flex;
+  justify-content: space-between;
+}
+.carte .cardrow .card_con .cards .card {
+  background-color: var(--clr11);
+  border: 1px solid var(--clr3);
+}
+.carte .cardrow .card_con .cards .card h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 10px 10px 10px 35px;
+  color: var(--clr10);
+}
+
+.carte .cardrow .card_con .cards .card > p {
+  background-color: var(--clr3);
+  color: var(--clr11);
+  text-align: center;
+  padding: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+.carte .cardrow .card_con .cards .card .picon {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carte .cardrow .card_con .cards .card .picon img {
+  position: relative;
+  top: 8px;
+  padding: 3px;
+}
+.carte .cardrow .card_con .cards .card .picon .bin {
+  background-color: var(--clr9);
+  width: 100%;
+  height: 40px;
+}
+
+.carte .cardrow .card_con .cards .card .picon .pencil {
+  background-color: var(--clr3);
+  width: 100%;
+  height: 40px;
+}
+.carte > h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  margin: 45px 0 50px 0;
+  color: var(--clr9);
+  align-self: flex-start;
+  margin-left: 45px;
+}
+.carte .cardrow {
+  margin-top: 80px;
+}
+
+.carte > h1 img {
+  margin-bottom: 7px;
+  margin-right: 5px;
+}
+.carte > button,
+.carte .btn button {
+  outline: none;
+  border: 1.5px solid var(--clr10);
+  color: var(--clr10);
+  background-color: var(--clr11);
+  padding: 5px 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 100px;
+}
+.carte .btn {
+  display: flex;
+  gap: 30px;
+}
+.carte .btn button {
+  margin-top: 0px;
+  padding: 5px 10px;
+  background: transparent;
+}
+.carte .btn button:nth-child(1) {
+  color: var(--clr11);
+  background-color: var(--clr10);
+}
+
+/* Pop up Styling */
+
+.drink_popup {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.drink_popup .popup {
+  margin-top: 150px;
+  padding: 20px 75px;
+  background-color: var(--clr11);
+  border: 1px solid var(--clr3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.drink_popup .popup input,
+.drink_popup .popup textarea {
+  padding: 12px;
+  border: 1px solid var(--clr3);
+  margin: 5px 0;
+  display: block;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+.drink_popup .popup label,
+.drink_popup .popup select {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.drink_popup .popup select {
+  padding: 10px 15px;
+  border: 1px solid var(--clr3);
+  margin: 5px 0;
+  display: block;
+  width: 100%;
+}
+.drink_popup .popup h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 65px;
+  margin-top: 10px;
+}
+
+.drink_popup .popup > img {
+  width: 75px;
+}
+.drink_popup .popup > p {
+  font-size: 10px;
+  align-self: flex-start;
+  margin-top: -10px;
+}
+.drink_popup .popup button {
+  outline: none;
+  padding: 5px 25px;
+  border: 1.5px solid var(--clr10);
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 50px;
+  background-color: var(--clr10);
+  color: var(--clr11);
+}
+
+.drink_popup .popup div > button {
+  margin: 10px 0 25px 0;
+  position: relative;
+  left: 85px;
+}
+
+/* xxxxxxxxxxxxx carte Styling xxxxxxxxxxxx */
+
+/* ------------- Home1 Styling ------------ */
+
+.home1_con {
+  width: 100%;
+  min-height: 155vh;
+  background-color: var(--clr9);
+  background-image: url(/images/home1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.home1_con .home1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+.home1_con .home1 .btn {
+  margin: 25px 0 85px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+.home1_con .home1 .btn button {
+  padding: 5px 15px;
+  border: 1.5px solid var(--clr10);
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--clr10);
+  background-color: var(--clr11);
+}
+
+.home1_con .home1 .btn button:nth-child(2) {
+  color: var(--clr11);
+  background-color: var(--clr10);
+}
+
+.home1_con .home1 h1 {
+  align-self: flex-start;
+  position: relative;
+  top: 10px;
+  left: 50px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: var(--clr9);
+}
+
+.home1_con .home1 h1 img {
+  margin-bottom: 8px;
+}
+
+.home1_con .home1 .cards_con .cards h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: var(--clr10);
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+.home1_con .home1 .hide {
+  display: none;
+}
+.home1_con .home1 .cards_con .cards h3 img {
+  margin-bottom: 5px;
+  width: 30px;
+}
+
+.cards_con {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.cards_con .cards .cardbox {
+  padding: 25px 15px;
+  border: 1px solid var(--clr2);
+  background-color: var(--clr11);
+  min-height: 800px;
+}
+
+.home1_con .home1 .cards_con .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 350px;
+}
+
+.cards_con .cards .cardbox .card1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+  border: 1px solid var(--clr10);
+}
+
+.cards_con .cards .cardbox .card1 .p2 p:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.cards_con .cards .cardbox .card1 .p2 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 25px 0 45px 0;
+}
+
+.cards_con .cards .cardbox .card1 .p1,
+.cards_con .cards .cardbox .card1 .p3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.cards_con .cards .cardbox .card1 .p1 {
+  background-color: #5a5a98;
+  color: var(--clr11);
+  border-bottom: 2px solid #43446e;
+  padding: 10px;
+}
+
+.cards_con .cards .cardbox .card1 .black {
+  background-color: var(--clr7);
+}
+
+.cards_con .cards .cardbox .card1 .p3 .black {
+  background-color: var(--clr7) !important  ;
+}
+
+.cards_con .cards .cardbox .card1 .p3 {
+  background-color: var(--clr11);
+  color: var(--clr10);
+  border-top: 2px solid #43446e;
+  justify-content: space-around;
+}
+
+.cards_con .cards .cardbox .card1 .p3 p:nth-child(1) {
+  font-size: 10px;
+}
+
+.cards_con .cards .cardbox .card1 .p3 p:nth-child(1) span,
+.cards_con .cards .cardbox .card1 .p3 p:nth-child(3) {
+  font-size: 24px;
+}
+
+.cards_con .cards .cardbox .card1 .p3 p:nth-child(2) {
+  padding: 10px 25px;
+  background-color: var(--clr9);
+  color: var(--clr11);
+}
+
+.cards_con .cards .cardbox .card1 .p1 p img {
+  width: 25px;
+  margin-bottom: 7px;
+}
+
+/* xxxxxxxxxxxxx Home1 Styling xxxxxxxxxxxx */
+
+/*------------------- scrollbar ---------------------------------*/
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #91919a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr10);
+  border-radius: 10px;
+}
+
+.cs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* ----------------- Media Queries --------------------------- */
+
+@media screen and (min-width: 1920px) and (max-width: 2200px) {
+  /*------------------------ home1 ------------*/
+  .reglages_con .login {
+    width: 2050px;
+  }
+
+  .reglages_con .login form {
+    margin-top: 50px;
+    padding: 50px 75px;
+  }
+  .reglages_con .login form label {
+    font-size: 22px;
+    
+  }
+  
+  .reglages_con .login form input {
+    font-size: 22px;
+    margin-top: 10px;
+    
+  }
+
+  .reglages_con .login form button{
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .faddress .address {
+    font-size: 16px;
+  }
+
+  .ftextcon .title{
+    font-size: 20px;
+  }
+
+  .flinks .link a {
+    font-size: 16px;
+  
+  }
+
+  .links div li a {
+    font-size: 24px;
+  }
+
+  .home1_con {
+    height: 180vh;
+  }
+
+  .home1_con .home1 h1 {
+    top: 55px;
+    left: 80px;
+    font-size: 42px;
+  }
+
+  .cards_con {
+    gap: 120px;
+    margin-top: 50px;
+  }
+
+  .cards_con .cards .cardbox {
+    padding: 55px 25px 75px 25px;
+    min-height: 1200px;
+  }
+
+  .home1_con .home1 .cards_con .cards {
+    width: 500px;
+  }
+
+  .cards_con .cards .cardbox .card1 {
+    margin-bottom: 75px;
+  }
+
+  .home1_con .home1 .btn button {
+    padding: 7px 15px;
+    font-size: 16px;
+  }
+
+  .home1_con .home1 .btn {
+    margin: 85px 0 130px 0;
+    width: 580px;
+  }
+  .home1_con .home1 .cards_con .cards h3 {
+    font-size: 28px;
+    margin-bottom: 55px;
+  }
+
+  .cards_con .cards .cardbox .card1 .p2 {
+    font-size: 20px;
+    margin: 35px 0 65px 0;
+  }
+
+  .cards_con .cards .cardbox .card1 .p1 {
+    padding: 15px;
+    font-size: 22px;
+  }
+  .cards_con .cards .cardbox .card1 .p3 p:nth-child(2) {
+    padding: 15px 25px;
+    font-size: 22px;
+  }
+
+  /* ------------- carte -------------------------- */
+
+  .carte .cardrow .card_con {
+    width: 520px;
+    padding: 5px 15px 15px 15px;
+    height: 1200px;
+  }
+
+  .carte .cardrow .card_con .heading {
+    padding: 15px;
+    margin-bottom: 35px;
+    font-size: 28px;
+  }
+  .carte,
+  .carte .cardrow {
+    gap: 30px 120px;
+  }
+
+  .carte .cardrow .card_con .cards {
+    gap: 50px;
+  }
+
+  .carte .btn button {
+    padding: 7px 20px;
+    font-size: 18px;
+  }
+
+  .carte .cardrow .card_con .cards .card h1 {
+    font-size: 32px;
+    padding: 20px 20px 20px 45px;
+  }
+
+  .carte .cardrow .card_con .cards .card div > p {
+    font-size: 18px;
+    padding: 12px 15px;
+  }
+
+  .carte .cardrow .card_con .cards .card div > p:nth-child(2) {
+    font-size: 36px;
+    bottom: 18px;
+  }
+
+  .carte .cardrow .card_con .cards .card .picon .bin {
+    height: 60px;
+  }
+
+  .carte .cardrow .card_con .cards .card .picon .pencil {
+    height: 60px;
+  }
+
+  .carte .cardrow .card_con .cards .card > p {
+    padding: 18px;
+    font-size: 20px;
+  }
+
+  .carte > button {
+    padding: 8px 25px;
+    font-size: 18px;
+  }
+
+  /* Accordion */
+
+  .reglages_con .accordion .accordion_tab > label {
+    font-size: 24px;
+  }
+
+  .accordion .accordion_tab .accordion_content label {
+    font-size: 18px !important;
+  }
+  .accordion .accordion_tab .accordion_content .icard {
+    width: 720px !important;
+  }
+  .accordion .accordion_tab .accordion_content .icard p {
+    font-size: 18px;
+  }
+  .accordion .accordion_tab .accordion_content .icard .btn {
+    width: 500px;
+    justify-content: center;
+    gap: 30px;
+  }
+  .accordion .accordion_tab .accordion_content .icard .btn button {
+    padding: 5px 25px;
+    font-size: 16px;
+  }
+
+  .accordion .accordion_tab .accordion_content input {
+    font-size: 18px !important;
+  }
+
+  .accordion .accordion_tab .accordion_content .title {
+    font-size: 22px;
+  }
+
+  .acc4 h1 {
+    font-size: 28px;
+  }
+
+  .acc4 p {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+
+  .acc4 p span {
+    font-size: 22px !important;
+  }
+
+  .acc4 .text .btn button {
+    padding: 8px 25px;
+    font-size: 16px;
+  }
+
+  .acc2 .part1 form > button {
+    right: 10;
+    top: 15px;
+  }
+
+  .accordion_content button {
+    font-size: 18px !important;
+    padding: 8px 25px;
+  }
+
+  .acc1 .timeline h1 {
+    font-size: 20px;
+  }
+
+  .acc1 .timeline img {
+    width: 850px;
+  }
+
+  /*---------- Factures------------ */
+
+  .invoices_con table th {
+    padding: 18px 80px;
+    font-size: 20px;
+  }
+
+  .invoices_con table td {
+    padding: 18px 80px;
+    font-size: 20px;
+  }
+  .invoices_con .date_component {
+    position: relative;
+    left: 2%;
+  }
+  .invoices_con .date_component label {
+    font-size: 20px;
+  }
+
+  .invoices_con .date_component input {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .invoices_con .date_component button {
+    font-size: 16px;
+    padding: 7px 25px;
+    top: -3px;
+  }
+
+  .invoices_con .cs {
+    margin-top: 10px;
+    position: relative;
+    left: 5%;
+  }
+  .invoices_con .cs > p {
+    font-size: 14px;
+  }
+
+  .invoices_con > .icard {
+    width: 800px;
+    padding: 70px 75px;
+    margin-top: 250px;
+  }
+  .invoices_con > .icard p {
+    font-size: 20px;
+  }
+
+  .invoices_con > .icard p:nth-child(1) {
+    font-size: 18px !important;
+  }
+
+  .invoices_con > .icard .btn {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .invoices_con > .icard .btn button {
+    padding: 7px 25px;
+    font-size: 18px;
+  }
+
+  /* FAQ & LEGALES */
+
+  .legal_con .textcon,
+  .faq_con .textcon {
+    top: 300px;
+    padding: 0 28rem;
+  }
+
+  .legal_con .textcon h1,
+  .faq_con .textcon h1 {
+    font-size: 42px;
+    margin-bottom: 100px;
+  }
+
+  .legal_con p,
+  .faq_con p {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    margin-bottom: 35px;
+  }
+
+  .ques h3 {
+    font-size: 22px;
+  }
+
+  .ques span {
+    width: 27px;
+  }
+
+  .faq_con .textcon .underlined_text {
+    font-size: 16px;
+    line-height: 14px;
+  }
+
+  .faq_con .textcon button {
+    font-size: 18px;
+  }
+
+  /* CONTACT */
+
+  .contact_link .title {
+    left: 130%;
+    top: 50px;
+    font-size: 38px;
+  }
+
+  .contact_link .contact_img img {
+    width: 650px;
+    top: 150px;
+    right: 40%;
+  }
+
+  .contact_link .contact_links {
+    left: 130%;
+    top: 70px;
+  }
+
+  /* lower section */
+
+  .contact_con .contact_form form {
+    left: 30%;
+    top: 130px;
+    padding: 35px 70px;
+  }
+
+  .contact_con .contact_form form .input input,
+  .contact_con .contact_form form .message textarea {
+    padding: 12px 25px;
+    font-size: 20px;
+  }
+
+  .contact_con .contact_form form .btn button {
+    font-size: 16px;
+    left: 75%;
+  }
+
+  /* HOME */
+
+  .main {
+    background-size: 2400px 1800px;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  .herocon .htext {
+    margin-left: 300px;
+    font-size: 20px;
+  }
+
+  .herocon .himg {
+    left: 40%;
+  }
+
+  .herocon .himg .himgstyle {
+    width: 800px;
+  }
+
+  .qrimg img {
+    width: 275px;
+    position: relative;
+    left: 200px;
+    top: 55px;
+  }
+
+  .arrow img {
+    position: relative;
+    top: 110px;
+    right: 110px;
+    width: 350px;
+  }
+
+  .arrow h1 {
+    position: relative;
+    top: 100px;
+    left: 170px;
+  }
+
+  .qrtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 400px;
+  }
+
+  .qrcon h1 {
+    font-size: 36px;
+  }
+
+  .qrcon .stext {
+    position: relative;
+    right: 80px;
+    top: 70px;
+  }
+
+  .qrtext h1 {
+    font-size: 38px;
+  }
+
+  .qrtext h1:nth-child(1) {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .qrtext h1:nth-child(2) {
+    margin-top: 100px;
+    margin-right: 400px;
+  }
+
+  /* Section 1 */
+
+  .section .sec1 .title {
+    font-size: 28px;
+    top: -500px;
+    left: 275px;
+  }
+
+  .section .sec1 .para {
+    font-size: 20px;
+    top: -370px;
+    left: 400px;
+    font-weight: 300;
+  }
+
+  .price_component {
+    top: -300px;
+    left: 650px;
+  }
+
+  .price_component .cardcon .card .features {
+    margin-top: 10px;
+  }
+  .price_component .cardcon .card .features p {
+    font-size: 18px !important;
+  }
+
+  .price_component .cardcon .card {
+    padding: 55px 90px !important;
+    margin: 25px;
+  }
+
+  .price_component .cardcon .card > p:nth-child(1) {
+    font-size: 58px;
+    margin-bottom: -10px;
+  }
+
+  .price_component .cardcon .card > p:nth-child(2) {
+    font-size: 42px;
+  }
+
+  .price_component .cardcon .card > p:nth-child(3) {
+    font-size: 24px;
+  }
+
+  .price_component .cardcon .card button {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .section2 .sec2 .title {
+    font-size: 28px;
+    top: 550px;
+    left: 250px;
+  }
+
+  .section2 .sec2 .para {
+    font-size: 20px;
+    left: 380px;
+    top: 650px;
+  }
+
+  .btn_component {
+    top: 750px;
+    gap: 25px;
+  }
+
+  .btn_component button {
+    padding: 12px 35px;
+    font-size: 18px;
+  }
+
+  .branding {
+    top: 950px;
+  }
+
+  .branding img {
+    width: 500px;
+  }
+
+  /* signup login */
+
+  .signup_con #step .title {
+    font-size: 24px;
+  }
+  .signup_con #step label {
+    font-size: 20px;
+  }
+
+  .signup_con #step input {
+    font-size: 20px;
+  }
+
+  .signup_con #step h1 {
+    margin: 30px 0 75px 0;
+    font-size: 42px;
+  }
+
+  .signup_con #step button {
+    font-size: 18px !important;
+    padding: 8px 25px !important;
+  }
+
+  .login_con .login h1 {
+    margin: 50px 0 100px 0;
+    font-size: 42px;
+  }
+  .login_con .login form label {
+    font-size: 22px;
+  }
+
+  .login_con .login form input {
+    font-size: 20px;
+  }
+
+  .login_con .login form p {
+    font-size: 18px;
+  }
+
+  .login_con .login form button {
+    font-size: 18px;
+    padding: 8px 25px;
+    margin-top: 10px;
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1700px) and (max-width: 1919px) {
+
+  /* home1 ------------------------------ */
+
+  .home1_con {
+    height: 180vh;
+  }
+
+  .home1_con .home1 h1 {
+    top: 50px;
+    left: 80px;
+    font-size: 36px;
+  }
+
+  .cards_con {
+    gap: 80px;
+    margin-top: 100px;
+  }
+
+  .cards_con .cards .cardbox {
+    padding: 35px 25px 75px 25px;
+    min-height: 1150px;
+  }
+
+  .home1_con .home1 .cards_con .cards {
+    width: 480px;
+  }
+
+  .cards_con .cards .cardbox .card1 {
+    margin-bottom: 55px;
+  }
+
+  .home1_con .home1 .btn button {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+
+  .home1_con .home1 .btn {
+    margin: 150px 0 50px 0;
+    width: 500px;
+  }
+
+  .home1_con .home1 .cards_con .cards h3 {
+    font-size: 28px;
+    margin-bottom: 55px;
+  }
+
+  .cards_con .cards .cardbox .card1 .p2 {
+    font-size: 14px;
+    margin: 25px 0 45px 0;
+  }
+
+  .cards_con .cards .cardbox .card1 .p1 {
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .cards_con .cards .cardbox .card1 .p3 p:nth-child(2) {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+
+
+  /* ------------- carte -------------------------- */
+
+  .carte .cardrow .card_con {
+    width: 450px;
+    padding: 5px 12px 12px 12px;
+    height: 1000px;
+  }
+
+  .carte .cardrow .card_con .heading {
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .carte,
+  .carte .cardrow {
+    gap: 10px 90px;
+  }
+
+  .carte .cardrow .card_con .cards {
+    gap: 40px;
+  }
+
+  .carte .btn button {
+    padding: 7px 20px;
+    font-size: 16px;
+  }
+
+  .carte .cardrow .card_con .cards .card h1 {
+    font-size: 22px;
+    padding: 15px 15px 15px 40px;
+  }
+
+  .carte .cardrow .card_con .cards .card div > p {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .carte .cardrow .card_con .cards .card div > p:nth-child(2) {
+    font-size: 30px;
+    bottom: 15px;
+  }
+
+  .carte .cardrow .card_con .cards .card .picon .bin {
+    height: 50px;
+  }
+
+  .carte .cardrow .card_con .cards .card .picon .pencil {
+    height: 50px;
+  }
+
+  .carte .cardrow .card_con .cards .card > p {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .carte > button {
+    padding: 8px 25px;
+    font-size: 16px;
+  }
+
+  /* ------------- Accordion ------------ */
+
+  .reglages_con .accordion .accordion_tab > label {
+    font-size: 22px;
+  }
+
+  .accordion .accordion_tab .accordion_content label {
+    font-size: 17px !important;
+  }
+  .accordion .accordion_tab .accordion_content .icard {
+    width: 720px !important;
+  }
+  .accordion .accordion_tab .accordion_content .icard p {
+    font-size: 18px;
+  }
+  .accordion .accordion_tab .accordion_content .icard .btn {
+    width: 500px;
+    justify-content: center;
+    gap: 30px;
+  }
+  .accordion .accordion_tab .accordion_content .icard .btn button {
+    padding: 5px 25px;
+    font-size: 16px;
+  }
+
+  .accordion .accordion_tab .accordion_content input {
+    font-size: 16px !important;
+  }
+
+  .accordion .accordion_tab .accordion_content .title {
+    font-size: 22px;
+  }
+
+  .acc4 h1 {
+    font-size: 28px;
+  }
+
+  .acc4 p {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+
+  .acc4 p span {
+    font-size: 20px !important;
+  }
+
+  .acc4 .text .btn button {
+    padding: 8px 25px;
+    font-size: 16px;
+  }
+
+  .acc2 .part1 form > button {
+    right: 10;
+    top: 15px;
+  }
+
+  .accordion_content button {
+    font-size: 16px !important;
+    padding: 8px 25px;
+  }
+
+  .acc1 .timeline h1 {
+    font-size: 20px;
+  }
+
+  .acc1 .timeline img {
+    width: 850px;
+  }
+
+  /*---------- Factures------------ */
+
+  .invoices_con table th {
+    padding: 18px 70px;
+    font-size: 18px;
+  }
+
+  .invoices_con table td {
+    padding: 18px 70px;
+    font-size: 18px;
+  }
+
+  .invoices_con .date_component {
+    position: relative;
+    left: 2%;
+  }
+  .invoices_con .date_component label {
+    font-size: 18px;
+  }
+
+  .invoices_con .date_component input {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .invoices_con .date_component button {
+    font-size: 16px;
+    padding: 7px 25px;
+    top: -3px;
+  }
+
+  .invoices_con .cs {
+    margin-top: 10px;
+    position: relative;
+    left: 5%;
+  }
+  .invoices_con .cs > p {
+    font-size: 12px;
+    left: 2%;
+  }
+
+  .invoices_con > .icard {
+    width: 800px;
+    padding: 70px 75px;
+  }
+  .invoices_con > .icard p {
+    font-size: 16px;
+  }
+
+  .invoices_con > .icard p:nth-child(1) {
+    font-size: 16px !important;
+  }
+
+  .invoices_con > .icard .btn {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .invoices_con > .icard .btn button {
+    padding: 7px 25px;
+    font-size: 16px;
+  }
+
+  /* FAQ & LEGALES */
+
+  .legal_con .textcon,
+  .faq_con .textcon {
+    top: 250px;
+    padding: 0 22rem;
+  }
+
+  .legal_con .textcon h1,
+  .faq_con .textcon h1 {
+    font-size: 42px;
+    margin-bottom: 100px;
+  }
+  .legal_con p,
+  .faq_con p {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    margin-bottom: 32px;
+  }
+
+  .ques h3 {
+    font-size: 22px;
+  }
+
+  .ques span {
+    width: 27px;
+  }
+
+  .faq_con .textcon .underlined_text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .faq_con .textcon button {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* CONTACT */
+
+  .contact_link .title {
+    left: 110%;
+    top: 50px;
+    font-size: 38px;
+  }
+
+  .contact_link .contact_img img {
+    top: 160px;
+    right: 50%;
+    width: 600px;
+  }
+
+  .contact_link .contact_links {
+    left: 110%;
+    top: 70px;
+  }
+
+  /* lower section */
+
+  .contact_con .contact_form form {
+    left: 32%;
+    top: 150px;
+  }
+
+  .contact_con .contact_form form .input input,
+  .contact_con .contact_form form .message textarea {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  .contact_con .contact_form form .btn button {
+    font-size: 16px;
+    left: 70%;
+  }
+
+  /*--------- HOME -----------*/
+
+  .main {
+    background-size: 2400px 1800px;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  .herocon .htext {
+    margin-left: 300px;
+    font-size: 18px;
+  }
+
+  .herocon .himg {
+    left: 40%;
+  }
+
+  .herocon .himg .himgstyle {
+    width: 800px;
+  }
+
+  .qrimg img {
+    width: 275px;
+    position: relative;
+    left: 280px;
+    top: 65px;
+  }
+
+  .arrow img {
+    position: relative;
+    top: 130px;
+    right: -30px;
+    width: 320px;
+  }
+
+  .arrow h1 {
+    position: relative;
+    top: 130px;
+    left: 280px;
+  }
+
+  .qrtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 400px;
+  }
+
+  .qrcon h1 {
+    font-size: 32px;
+  }
+
+  .qrcon .stext {
+    position: relative;
+    right: -50px;
+    top: 50px;
+    font-size: 36px;
+  }
+
+  .qrtext h1 {
+    font-size: 32px;
+  }
+
+  .qrtext h1:nth-child(1) {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .qrtext h1:nth-child(2) {
+    margin-top: 100px;
+    margin-right: 200px;
+  }
+
+  /* Section 1 */
+
+  .section .sec1 .title {
+    font-size: 22px;
+    top: -550px;
+    left: 250px;
+  }
+
+  .section .sec1 .para {
+    font-size: 18px;
+    top: -420px;
+    left: 330px;
+    font-weight: 300;
+  }
+
+  .price_component {
+    top: -360px;
+    left: 520px;
+  }
+
+  .price_component .cardcon .card .features {
+    margin-top: 10px;
+  }
+
+  .price_component .cardcon .card .features p {
+    font-size: 16px !important;
+  }
+
+  .price_component .cardcon .card {
+    padding: 55px 100px;
+    margin: 25px;
+  }
+
+  .price_component .cardcon .card > p:nth-child(1) {
+    font-size: 50px;
+    margin-bottom: -10px;
+  }
+
+  .price_component .cardcon .card > p:nth-child(2) {
+    font-size: 40px;
+  }
+
+  .price_component .cardcon .card > p:nth-child(3) {
+    font-size: 22px;
+  }
+
+  .section2 .sec2 .title {
+    font-size: 22px;
+    top: 550px;
+    left: 260px;
+  }
+
+  .section2 .sec2 .para {
+    font-size: 18px;
+    left: 350px;
+    top: 650px;
+  }
+
+  .price_component .cardcon .card button {
+    font-size: 18px;
+    padding: 8px 25px;
+  }
+
+  .btn_component {
+    top: 750px;
+  }
+
+  .btn_component button {
+    padding: 12px 35px;
+    font-size: 18px;
+  }
+
+  .branding {
+    top: 950px;
+  }
+
+  .branding img {
+    width: 450px;
+  }
+
+  /* signup login */
+
+  .signup_con #step .title {
+    font-size: 22px;
+  }
+  .signup_con #step label {
+    font-size: 20px;
+  }
+
+  .signup_con #step input {
+    font-size: 20px;
+  }
+
+  .signup_con #step h1 {
+    margin: 30px 0 75px 0;
+    font-size: 42px;
+  }
+
+  .signup_con #step button {
+    font-size: 18px !important;
+    padding: 8px 25px !important;
+  }
+
+  .login_con .login h1 {
+    margin: 50px 0 100px 0;
+    font-size: 42px;
+  }
+  .login_con .login form label {
+    font-size: 22px;
+  }
+
+  .login_con .login form input {
+    font-size: 20px;
+  }
+
+  .login_con .login form p {
+    font-size: 18px;
+  }
+
+  .login_con .login form button {
+    font-size: 18px;
+    padding: 8px 25px;
+    margin-top: 10px;
+  }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+/* home1 ------------------------------ */
+.popup_big {
+  padding: 5px 15px;
+}
+.reglages_con .login h1{
+  font-size: 22px;
+  margin-left: 45px;
+}
+.reglages_con {
+  overflow: hidden;
+}
+.reglages_con .login {
+  width: 2050px;
+}
+
+.reglages_con .login form {
+  margin-top: 50px;
+  padding: 20px 45px;
+}
+.reglages_con .login form label {
+  font-size: 16px;
+  
+}
+
+.reglages_con .login form input {
+  font-size: 16px;
+  margin-top: 10px;
+  
+}
+
+.reglages_con .login form button{
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+
+.faddress .address {
+  font-size: 12px;
+}
+
+.ftextcon .title{
+  font-size: 14px;
+}
+
+.flinks .link a {
+  font-size: 12px;
+
+}
+
+.links div li a {
+  font-size: 16px;
+}
+.links div li {
+  margin-left: 45px;
+
+}
+
+.home1_con {
+  height: 180vh;
+}
+
+.home1_con .home1 h1 {
+  top: 30px;
+  left: 80px;
+  font-size: 24px;
+}
+
+.cards_con {
+  gap: 20px;
+  margin-top: 100px;
+}
+
+.cards_con .cards .cardbox {
+  padding: 35px 25px 75px 25px;
+  min-height: 800px;
+}
+
+.home1_con .home1 .cards_con .cards {
+  width: 320px;
+}
+
+.cards_con .cards .cardbox .card1 {
+  margin-bottom: 25px;
+}
+
+.home1_con .home1 .btn button {
+  padding: 5px 15px;
+  font-size: 12px;
+}
+
+.home1_con .home1 .btn {
+  margin: 70px 0 10px 0;
+  width: 450px;
+}
+
+.home1_con .home1 .cards_con .cards h3 {
+  font-size: 20px;
+  margin-bottom: 55px;
+}
+
+.cards_con .cards .cardbox .card1 .p2 {
+  font-size: 10px;
+  margin: 20px 0 35px 0;
+}
+
+.cards_con .cards .cardbox .card1 .p1 {
+  padding: 12px;
+  font-size: 14px;
+}
+
+.cards_con .cards .cardbox .card1 .p3 p:nth-child(2) {
+  padding: 12px 18px;
+  font-size: 14px;
+}
+
+
+/* ------------- carte -------------------------- */
+
+.carte .cardrow .card_con {
+  width: 320px;
+  padding: 5px 12px 12px 12px;
+  height: 800px;
+}
+
+.carte .cardrow .card_con .heading {
+  padding: 12px;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.carte,
+.carte .cardrow {
+  gap: 5px 20px;
+}
+
+.carte .cardrow .card_con .cards {
+  gap: 20px;
+}
+
+.carte .btn button {
+  padding: 5px 20px;
+  font-size: 12px;
+}
+
+.carte .cardrow .card_con .cards .card h1 {
+  font-size: 18px;
+  padding: 15px 15px 15px 40px;
+}
+
+.carte .cardrow .card_con .cards .card div > p {
+  font-size: 12px;
+  padding: 10px 5px;
+}
+
+.carte .cardrow .card_con .cards .card div > p:nth-child(2) {
+  font-size: 24px;
+  bottom: 12px;
+}
+
+.carte .cardrow .card_con .cards .card .picon .bin {
+  height: 40px;
+}
+
+.carte .cardrow .card_con .cards .card .picon .pencil {
+  height: 40px;
+}
+
+.carte .cardrow .card_con .cards .card > p {
+  padding: 12px;
+  font-size: 13px;
+}
+
+.carte > button {
+  padding: 6px 25px;
+  font-size: 12px;
+}
+
+.carte > h1{
+  font-size: 22px;
+}
+/* ------------- Accordion ------------ */
+
+.reglages_con .accordion .accordion_tab > label {
+  font-size: 18px;
+}
+
+.accordion .accordion_tab .accordion_content label {
+  font-size: 14px !important;
+}
+.accordion .accordion_tab .accordion_content .icard {
+  width: 550px !important;
+}
+.accordion .accordion_tab .accordion_content .icard p {
+  font-size: 14px;
+}
+.accordion .accordion_tab .accordion_content .icard .btn {
+  width: 500px;
+  justify-content: center;
+  gap: 30px;
+}
+.accordion .accordion_tab .accordion_content .icard .btn button {
+  padding: 5px 25px;
+  font-size: 12px;
+}
+
+.accordion .accordion_tab .accordion_content input {
+  font-size: 12px !important;
+}
+
+.accordion .accordion_tab .accordion_content .title {
+  font-size: 18px;
+}
+
+.acc1 .title{
+  right: 0px !important;
+}
+
+.acc4 h1 {
+  font-size: 22px;
+}
+
+.acc4 p {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.acc4 p span {
+  font-size: 14px !important;
+}
+
+.acc4 .text .btn button {
+  padding: 8px 25px;
+  font-size: 12px;
+}
+
+.acc2 .part1 form > button {
+  right: 10;
+  top: 15px;
+}
+
+.accordion_content button {
+  font-size: 12px !important;
+  padding: 5px 25px;
+}
+
+.acc1 .timeline h1 {
+  font-size: 14px;
+}
+
+.acc1 .timeline img {
+  width: 600px;
+}
+
+.hform {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18rem;
+}
+
+/*---------- Factures------------ */
+
+.invoices_con table th {
+  padding: 12px 40px;
+  font-size: 13px;
+}
+
+.invoices_con table td {
+  padding: 12px 40px;
+  font-size: 13px;
+}
+
+.invoices_con .date_component {
+  position: relative;
+  left: 2%;
+}
+.invoices_con .date_component label {
+  font-size: 14px;
+}
+
+.invoices_con .date_component input {
+  font-size: 12px;
+  padding: 8px;
+}
+
+.invoices_con .date_component button {
+  font-size: 12px;
+  padding: 7px 25px;
+  top: -3px;
+}
+
+.invoices_con .cs {
+  margin-top: 10px;
+  position: relative;
+  left: 5%;
+}
+
+.invoices_con .cs > p {
+  font-size: 10px;
+  left: 2%;
+}
+
+.invoices_con > .icard {
+  width: 600px;
+  padding: 30px 45px;
+  margin-bottom: 50px;
+}
+.invoices_con > .icard p {
+  font-size: 14px;
+}
+
+.invoices_con > .icard p:nth-child(1) {
+  font-size: 12px !important;
+}
+
+.invoices_con > .icard .btn {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.invoices_con > .icard .btn button {
+  padding: 5px 25px;
+  font-size: 12px;
+}
+
+/* FAQ & LEGALES */
+
+.legal_con .textcon,
+.faq_con .textcon {
+  top: 140px;
+  padding:0 9.5rem;
+}
+
+.legal_con .textcon h1,
+.faq_con .textcon h1 {
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+.legal_con p,
+.faq_con p {
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  margin-bottom: 28px;
+}
+
+.ques h3 {
+  font-size: 16px;
+}
+
+.ques span {
+  width: 25px;
+}
+
+.faq_con .textcon .underlined_text {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 10px;
+}
+
+.faq_con .textcon button {
+  font-size: 12px;
+  margin-top: -1px;
+ 
+}
+
+/* CONTACT */
+
+.contact_link .title {  
+  left:40%;
+  top: 100px;
+  font-size: 24px;
+}
+
+.contact_link .contact_img img {
+  top: 150px;
+  right: 20%;
+  width: 400px;
+}
+
+.contact_link .contact_links {
+  left: 40%;
+  top: 120px;
+}
+
+/* lower section */
+
+.contact_con .contact_form form {
+  left: 22%;
+  top: 150px;
+}
+
+.contact_con .contact_form form .input input,
+.contact_con .contact_form form .message textarea {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.contact_con .contact_form form .btn button {
+  font-size: 12px;
+  left: 70%;
+}
+
+/*--------- HOME -----------*/
+
+.main {
+  background-size: 1400px 1200px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.herocon .htext {
+  margin-top: -30px;
+  margin-left: 150px;
+  font-size: 12px;
+}
+
+.herocon .himg {
+  top: -70px;
+  left: 35%;
+}
+
+.herocon .himg .himgstyle {
+  width: 550px;
+}
+
+.qrimg img {
+  width: 175px;
+  position: relative;
+  left: 180px;
+  top: 100px;
+}
+
+.arrow img {
+  position: relative;
+  top: 150px;
+  right: -50px;
+  width: 180px;
+}
+
+.arrow h1 {
+  position: relative;
+  top: 150px;
+  left: 170px;
+}
+
+.qrtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 400px;
+}
+
+.qrcon h1 {
+  font-size: 24px;
+}
+
+.qrcon .stext {
+  position: relative;
+  right: -20px;
+  top: 90px;
+  font-size: 36px;
+}
+
+.qrtext h1 {
+  font-size: 24px;
+}
+
+.qrtext h1:nth-child(1) {
+  margin-top: 100px;
+  margin-left: -150px;
+}
+.qrtext h1:nth-child(2) {
+  margin-top: 60px;
+  margin-right: 140px;
+}
+
+/* Section 1 */
+
+.section .sec1 .title {
+  font-size: 16px;
+  top: -450px;
+  left: 200px;
+}
+
+.section .sec1 .para {
+  font-size: 14px;
+  top: -380px;
+  left: 260px;
+  font-weight: 300;
+}
+
+.price_component {
+  top: -360px;
+  left: 300px;
+}
+
+.price_component .cardcon .card .features {
+  margin-top: 10px;
+}
+
+.price_component .cardcon .card .features p {
+  font-size: 12px !important;
+}
+
+.price_component .cardcon .card {
+  padding: 25px 50px;
+  margin: 25px;
+}
+
+.price_component .cardcon .card > p:nth-child(1) {
+  font-size: 32px;
+  margin-bottom: -10px;
+}
+
+.price_component .cardcon .card > p:nth-child(2) {
+  font-size: 28px;
+}
+
+.price_component .cardcon .card > p:nth-child(3) {
+  font-size: 18px;
+}
+
+.section2 .sec2 .title {
+  font-size: 16px;
+  top: 450px;
+  left: 200px;
+}
+
+.section2 .sec2 .para {
+  font-size: 14px;
+  left: 250px;
+  top: 520px;
+}
+
+.price_component .cardcon .card button {
+  font-size: 12px;
+  padding: 5px 25px;
+}
+
+.btn_component {
+  top: 650px;
+}
+
+.btn_component button {
+  padding: 8px 35px;
+  font-size: 12px;
+}
+
+.branding {
+  top: 750px;
+}
+
+.branding img {
+  width: 350px;
+}
+
+
+
+/* signup login */
+
+.signup_con #step .title {
+  font-size: 18px;
+}
+.signup_con #step label {
+  font-size: 16px;
+}
+
+.signup_con #step input {
+  font-size: 14px;
+}
+
+.signup_con #step h1 {
+  margin: -50px 0 25px 0;
+  font-size: 28px;
+}
+
+.signup_con #step button {
+  font-size: 14px !important;
+  padding: 8px 25px !important;
+}
+
+.login_con .login h1 {
+  margin: 10px 0 30px 0;
+  font-size: 28px;
+}
+.login_con .login form label {
+  font-size: 16px;
+}
+
+.login_con .login form input {
+  font-size: 14px;
+}
+
+.login_con .login form p {
+  font-size: 12px;
+}
+
+.login_con .login form button {
+  font-size: 12px;
+  padding: 6px 25px;
+  margin-top: 10px;
+}
+
+.reglages_con .login {
+  width: 1200px;
+
+}
+
+}

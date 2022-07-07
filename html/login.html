@@ -1,0 +1,65 @@
+
+
+    <!----------------- Header ----------------------->
+
+    <div class="header">
+        <!------------- Navbar--------------- -->
+
+        <nav class="navbar">
+            <!--------- Logo Container--------- -->
+
+            <div class="logocon" onclick="location.href = 'http:\/\/dashboard.easy-as-pie.fr'">
+                <!-- logo -->
+
+                <div class="logo">
+                    <img src="../img/hlogo.png" alt="logo" />
+                </div>
+                <!-- logo text -->
+
+                <div class="logotext">
+                    <img src="../img/hlogotext.png" alt="text" />
+                    <img src="../img/hlogoline.png" alt="lineimg" />
+                </div>
+            </div>
+
+            <div class="links">
+                <!-- show hide class to toggle nav elements after login & active class to highlight current page  -->
+
+                <!--------- Before Login---------->
+                <div class="show">
+                    <li><a  href="http://easy-as-pie.fr">ACCUEIL</a></li>
+                    <li><a href="/sign-up">S’INSCRIRE</a></li>
+                    <li><a class="active" href="/login">SE CONNECTER</a></li>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="cont">
+        <div class="login_con">
+            <div id="step" class="login">
+                <div class="login" id="login">
+                    <h1>SE CONNECTER</h1>
+                    <form action="#" onsubmit="return false;">
+                        <label for="email">IDENTIFIANT</label> <br>
+                        <input type="email" id="email" name="email" placeholder="email"> <br>
+                        <label for="pass">MOT DE PASSE</label> <br>
+                        <input type="password" id="password" name="pass" placeholder="mot de passe"> <br>
+                        <span onclick="app.current.toggleLoginForgot()">Mot de passe oublié</span>
+                        <button onclick="app.current.login()">SE CONNECTER</button>
+                    </form>
+                </div>
+                <div id="forgot" class="login">
+                    <h1>MOT DE PASSE OUBLIE</h1>
+                    <form action="#" onsubmit="return false;">
+                        <input type="email" id="forgot-email" placeholder="Votre email" />
+                        
+                        <div class="btndiv buttons">
+                            <button class="light" onclick="app.current.toggleLoginForgot()">PRÉCÉDENT</button>
+                            <button onclick="app.current.forgot()">REINITIALISER</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

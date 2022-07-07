@@ -1,0 +1,136 @@
+body { margin: 0; position: relative; }
+body content { background: lightblue; height: 100vh; width: 100vw; color: #15253F; display: block;}
+body.sub-module { overflow: hidden; }
+body aside {z-index: 9999; top:0 !important; height: 100vh  !important; transform: translateX(-50%) !important; display: flex; align-items: center; }
+body #module-pop { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: white; opacity: 0.5; z-index: 998;}
+body aside > div {     display: block !important; max-height: 100%; overflow: auto; margin-top: 0 !important; }
+/* body #module { background: white; position: absolute; z-index: 999; top: 50vh; left: 50%; transform: translate(-50%, -50%); padding: 20px 50px 50px; }
+body #module aside { display: flex; flex-direction: column; justify-content: center; align-items: center; } */
+body .space-50 { display: block; height: 50px; }
+button { cursor:pointer}
+
+body .dropdown { position: relative; }
+body .dropdown .select-dropdown { width: 160px; height: 30px; cursor: pointer; line-height: 25px; }
+body .dropdown .options-dropdown { display: none; position: absolute; background-color: #f1f1f1; min-width: 160px; overflow: auto; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+body .dropdown.show .options-dropdown { display: block; }
+body .dropdown.show .options-dropdown > * { padding: 12px 16px; display: block; cursor: pointer }
+body .dropdown.show .options-dropdown > *:hover { background-color: #ddd; }
+
+/* LOGIN - FORGOT  */
+body.login label { text-transform: uppercase; margin-top: 10px;}
+body.login #step > div { display: none; flex-direction: column; align-items: center; }
+body.login #step.login > div#login { display: flex; }
+body.login #step.forgot > div#forgot { display: flex; }
+body.login #step > div > div { background: white; margin: 10px; width: 300px; padding: 30px 75px; display: flex; flex-direction: column; justify-content: center; }
+
+/* RESET PASSWORD */
+body.reset label { text-transform: uppercase; margin-top: 10px;}
+body.reset content > div { display: flex; flex-direction: column; align-items: center; }
+body.reset content > div > div { background: white; margin: 10px; width: 300px; padding: 30px 75px; display: flex; flex-direction: column; justify-content: center; }
+
+/* CREATE PASSWORD */
+body.create label { text-transform: uppercase;margin-top: 10px; }
+body.create content > div { display: flex; flex-direction: column; align-items: center; }
+body.create content > div > div { background: white; margin: 10px; width: 300px; padding: 30px 75px; display: flex; flex-direction: column; justify-content: center; }
+
+
+/* SIGNUP */
+body.signup #step > div { display: none; }
+body.signup #step.step1 > #step1,
+body.signup #step.step2 > #step2,
+body.signup #step.step3 > #step3,
+body.signup #step.step4 > #step4 { display: block; }
+
+/* body.signup #step > #step1 { width: 300px; padding: 30px 175px;}
+body.signup label { text-transform: uppercase;  margin-top: 10px;}
+body.signup content > div { display: flex; flex-direction: column; align-items: center; }
+body.signup content > div > div { background: white; margin: 10px; width: 500px; padding: 30px 75px; display: flex; flex-direction: column; justify-content: center; } */
+body.signup .hidden { visibility: hidden; }
+body.signup .buttons { display: flex; justify-content: space-between; margin-top: 25px;}
+/* body.signup .plans { display: flex; }
+body.signup .plans #plan-1 { margin-right: 15px; } */
+body.signup .plans .plan.select { border: 2px solid black; padding: 34px 44px 4px 44px !important; }
+/*body.signup .plans .plan { border: 1px solid lightgray; border-radius: 5px; padding: 20px; cursor: pointer; user-select: none; display: flex; flex-direction: column; align-items: center; justify-content: space-between;}
+body.signup .plans .price {margin: -10px auto 20px; font-size: 20px;}
+body.signup .plans ul { list-style-image: url('/img/check.svg'); font-size: 13px;} */
+
+
+body header { height: 100px; display: flex; justify-content: space-between; align-items: center; padding: 0 30px; width: calc(100% - 60px); }
+body header img { height: 80px; }
+body header span { display: inline-block; cursor: pointer; margin-left: 50px; user-select: none; text-underline-offset: 1rem;}
+body.home #menu-home, body.menu #menu-menu, body.orders #menu-orders, body.settings #menu-settings {
+    border-bottom: 3px solid #43446e;
+} 
+
+body.home content, body.menu content, body.orders content, body.settings content { padding-top: 100px; height: calc(100vh - 100px); width: 100%; overflow-y: auto; }
+body .dashboard-sub-title { padding: 50px 0 0 50px; margin-top: 0; width: calc(100% - 50px); }
+
+/* body.menu .btn { height: 30px; width: 160px; border: 1px solid #15253F; color: white; background: #15253F; text-transform: uppercase; font-size: 11px; display: flex; justify-content: center; align-items: center; cursor: pointer; } */
+body.menu #stock-input { display: flex; align-items: center; margin-top: 20px; cursor: pointer; }
+body.menu #stock-input input { width: auto; margin-right: 10px }
+/* body.menu .center { display: flex; width: 90%; margin: 0 5%; justify-content: center; flex-direction: column;} */
+/* body.menu .head-buttons { display: flex; justify-content: center; margin-bottom: 30px; } */
+/* body.menu .center .btn.btn-add-cate { color: #15253F; background: transparent; margin-left: 20px; } */
+/* body.menu #products { height: 50vh; padding: 0 10%; overflow-y: auto; flex-wrap: wrap; justify-content: space-evenly; display: flex; }
+body.menu .product { margin-bottom: 30px; width: 30%; } 
+body.menu .product .category { margin-bottom: 20px; background: #15253F; color: white; text-transform: uppercase; font-size: 16px; font-weight: bold; padding: 10px; text-align: center;} */
+/* 
+body.menu .product .items .item { margin-bottom: 10px; }
+body.menu .product .items .item .item-top { display: flex; width: calc(100% - 20px); padding: 10px; align-items: center; background-color: white; }
+body.menu .product .items .item .item-price { min-width: 20%; width: 20%; text-align: center; font-size: 14px; font-weight: bold; }
+body.menu .product .items .item .item-details { flex-grow: 1; display: flex; flex-direction: column; align-items: center; }
+body.menu .product .items .item .item-name { text-align: center; font-weight: bold; max-width: 90%; margin-bottom: 10px; }
+body.menu .product .items .item .item-desc { text-align: center; font-size: 12px; max-width: 90%; }
+body.menu .product .items .item .item-bottom { display: flex; }
+body.menu .product .items .item .item-bottom > * {  display: flex; justify-content: center; align-items: center; width: 50%; height: 30px; cursor: pointer; }
+body.menu .product .items .item .item-edit { background-color: #434371; }
+body.menu .product .items .item .item-delete { background-color: #862A2A; }
+body.menu .product .items .item .item-bottom > * > img { height: 20px; width: 20px; } */
+
+body.orders #ordersTable {overflow-y: auto; height: 60vh; width: calc(100% - 200px); margin: auto; overflow-x: hidden; }
+body.orders #ordersTable table { border-collapse: collapse; width: 100%; background-color: white;}
+body.orders #ordersTable thead th {position: sticky; top: 0; background: #15253F; color: white; text-transform: uppercase; font-size: 15px; font-weight: bold;}
+body.orders #ordersTable td, body.orders #ordersTable th { padding: 8px 16px; }
+body.orders #ordersTable tbody tr { border: 1px solid #ccc; }
+body.orders #popup_fact { position: fixed; max-height: 90vh; overflow-y: auto; margin-top: 100px; top: 50%; }
+
+
+body.settings .container { width: calc(100% - 200px); margin: 40px auto 30px; }
+body.settings .container .page { display: none; background-color: white; padding: 50px 8vw; }
+body.settings .etablissement #etablissement .page,
+body.settings .account #account .page,
+body.settings .offer #offer .page,
+body.settings .qrcode #qrcode .page { display: block; }
+body.settings .payment #payment .page { display: block; }
+body.settings .droppage { height: 60px; display: flex; cursor: pointer; user-select: none; align-items: center; padding: 0 20px; background: #15253F; color: white; text-transform: uppercase; font-size: 15px; font-weight: bold; position: relative; }
+body.settings .droppage::before { content: ">"; color: white; position: absolute; right: 20px; transform: scale(2.0,1.0) rotate(90deg); font-weight: bold; }
+body.settings .etablissement #etablissement .droppage::before,
+body.settings .account #account .droppage::before,
+body.settings .offer #offer .droppage::before,
+body.settings .qrcode #qrcode .droppage::before,
+body.settings .payment #payment .droppage::before {
+    transform: scale(2.0,1.0) rotate(-90deg);
+}
+body.settings input[type="file"] { visibility: hidden;}
+body.settings .container .page .flex-between { display: flex; justify-content: space-between; }
+body.settings .container .page .flex-between > div { display: flex; flex-direction: column; }
+
+body.bartender .cont { padding-top: 0; }
+
+
+
+/* Ringover Planning */
+#theplanning { padding-top: 40px; max-width: 900px; }
+#theplanning .planning { position: relative; background-color: #eee; height: 15px; border-radius: 13px; margin: 0 0 80px; }
+#theplanning .planning p { position: absolute; top: -45px; font-weight: bold; user-select: none;   font-family: "Raleway", sans-serif;}
+#theplanning .planning .plage { position: absolute; z-index: 1; height: 15px; border-radius: 13px; }
+#theplanning .planning .plage { background-color: #434371; }
+#theplanning .planning .plage[data-hh="1"] { background-color: #862A2A; }
+#theplanning .planning .plage span { position: absolute; top: 0; height: 25px; width: 25px; opacity: 1; transition: all ease 0.15s; cursor: grab; background-color: #434371; border-radius: 50%; margin: -5px 0 0 -3px; }
+#theplanning .planning .plage[data-hh="1"] span {  background-color: #862A2A; }
+#theplanning .planning .plage:hover span { background-color: #15253F; }
+#theplanning .planning .plage[data-hh="1"]:hover span { background-color: #BE0404; }
+#theplanning .planning .plage span.cursor_start { left: 0; }
+#theplanning .planning .plage span.cursor_end { right: 0; }
+#theplanning .planning .plage span strong { position: absolute; z-index: 2; left: 50%; top: 30px; transform: translateX(-50%); font-size: 12px; user-select: none;   font-family: "Quicksand", sans-serif;}
+#theplanning .planning .plage span.cursor_start strong { top: -22px; }

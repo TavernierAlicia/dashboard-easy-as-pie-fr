@@ -1,0 +1,378 @@
+    <div>
+        <div class=" reglages_con ">
+
+            <!-- Accordion -->
+            <div class="accordion_con ">
+                <div class="accordion">
+
+                    <!-- ACCORDION 1 -->
+
+                    <div class="accordion_tab" id="qrcode">
+
+                        <input type="checkbox" id="toggle0" class="acc_toggle" name="toggle" >
+                        <p class="acc_arrow">⌄</p>
+                        <label for="toggle0" onclick="app.current.changeTab(event)">QR CODES</label>
+
+
+                        <div class="accordion_content acc1">
+
+                            <div class="accordion_flex">
+                                <div>
+                                    <div class="title">
+                                        <h3>Serveurs</h3>
+                                    </div>
+                                    <img src="#" id="qr_serveurs" height="200" width="200" onclick="window.open(this.src, '_blank');">
+                                </div>
+                                <div>
+                                    <div class="title">
+                                        <h3>Clients</h3>
+                                    </div>
+                                    <img src="#" id="qr_clients"  height="200" width="200" onclick="window.open(this.src, '_blank');">
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- ACCORDION 1 -->
+
+                    <div class="accordion_tab" id="etablissement">
+
+                        <input type="checkbox" id="toggle1" class="acc_toggle" name="toggle" >
+                        <p class="acc_arrow">⌄</p>
+                        <label for="toggle1" onclick="app.current.changeTab(event)">ÉTABLISSEMENT</label>
+
+
+                        <div class="accordion_content acc1">
+
+                            <div class="img">
+                                <img id="etab-picture" src="#" alt="Aucune photo d'établissement.">
+                                <button onclick="this.nextElementSibling.click()">CHANGER IMAGE</button>
+                                <input onchange="app.current.sendNewPP(this)" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+
+                            </div>
+
+                            <div class="part3 ">
+
+                                <!------- form-------- -->
+                                <div class="hform">
+
+
+                                    <form>
+                                        <div class="title">
+                                            <h3>LE BAR</h3>
+                                        </div>
+                                        <label for="bname">NOM DU BAR</label> <br>
+                                        <input type="text" id="etab-name" name="bname" placeholder="ex: Le Mistral Gagnant"> <br>
+
+                                        <label for="address">ADRESSE</label> <br>
+                                        <input type="text" id="etab-addr" name="address" placeholder="ex: 3 rue des bouleaux"> <br>
+
+                                        <label for="code">CODE POSTAL</label> <br>
+                                        <input type="number" id="etab-cp" name="code" placeholder="ex: 75010"> <br>
+
+                                        <label for="ville">VILLE</label> <br>
+                                        <input type="text" id="etab-city" name="ville" placeholder="ex: Paris"> <br>
+
+                                        <label for="pays">PAYS</label> <br>
+                                        <select id="etab-country" name="pays" onchange="app.current.changeCountry(this)">
+                                            <option value="Belgique">Belgique</option>
+                                            <option value="France" selected>France</option>
+                                            <option value="Luxembourg">Luxembourg</option>
+                                            <option value="Suisse">Suisse</option>
+                                        </select> <br>
+                                    </form>
+
+
+                                    <form>
+                                        <div class="title">
+                                            <h3>LES RÉSEAUX SOCIAUX</h3>
+                                        </div>
+                                        <label for="insta"><img src="../img/icons/insta.png" alt=""> INSTAGRAM</label>
+                                        <br>
+                                        <input type="text" id="etab-insta" name="insta" placeholder="ex: https://instagram.com/myProfile"> <br>
+
+                                        <label for="twit"><img src="../img/icons/twitter.png" alt=""> TWITTER</label> <br>
+                                        <input type="text" id="etab-twitter" name="twit" placeholder="ex: https://twitter.com/myProfile"> <br>
+
+                                        <label for="face"><img src="../img/icons/fb.png" alt=""> FACEBOOK</label> <br>
+                                        <input type="text" id="etab-fb" name="face" placeholder="ex: https://facebook.com/myProfile"> <br>
+
+
+                                    </form>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="part3 ">
+                                <div class="title">
+                                    <h3>LES NUMÉROS</h3>
+                                </div>
+                                <!------- form-------- -->
+                                <form class="horizontal">
+                                    <div>
+                                        <label for="licence">NUMÉRO DE LICENSE</label> <br>
+                                        <input type="text" id="etab-lic" name="licence" placeholder="Votre numéro de licence"> <br>
+                                    </div>
+
+                                    <div>
+                                        <label for="siret">NUMÉRO DE SIRET</label> <br>
+                                        <input type="text" id="etab-siret" name="siret" placeholder="Votre numéro de siret"> <br>
+                                    </div>
+
+                                    <div>
+                                        <label for="phone">NUMÉRO DE TÉLÉPHONE</label> <br>
+                                        <input type="text" id="etab-phone" name="phone" placeholder="Votre numéro de téléphone"> <br>
+                                    </div>
+
+                                </form>
+
+
+                            </div>
+                            <div class="part3 tline">
+                                <div class="title">
+                                    <h3>LE PLANNING</h3>
+                                </div>
+
+                                <div id="theplanning"></div>
+                            </div>
+                            <button onclick="app.current.saveEtab()">VALIDER</button>
+                        </div>
+                    </div>
+
+                    <!-- ACCORDION 2 -->
+
+                    <div class="accordion_tab" id="account">
+
+                        <input type="checkbox" id="toggle2" class="acc_toggle" name="toggle">
+                        <p class="acc_arrow">⌄</p>
+                        <label for="toggle2" onclick="app.current.changeTab(event)">COMPTE</label>
+
+
+                        <div class="accordion_content acc2">
+                            <div class="part1 ">
+                                <div class="title">
+                                    <h3>MON PROFIL</h3>
+                                </div>
+                                <!------- form-------- -->
+                                <form>
+                                    <div class="radiobtn" id="civility">
+                                        <p>CIVILITÉ</p>
+                                        <input type="radio" id="Mr" name="civility" value="M.">
+                                        <label for="Mr">M.</label>
+                                        <input type="radio" id="Mme" name="civility" value="Mme.">
+                                        <label for="Mme">Mme.</label>
+                                        <input type="radio" id="Autre" name="civility" value="Autre">
+                                        <label for="Autre">Autre</label>
+                                    </div>
+
+
+                                    <label for="fname">NOM</label> <br>
+                                    <input type="text" id="fname" name="fname" placeholder="Nom"> <br>
+
+                                    <label for="lname">PRÉNOM</label> <br>
+                                    <input type="text" id="lname" name="lname" placeholder="Nom"> <br>
+
+                                    <label for="email">MAIL</label> <br>
+                                    <input type="email" id="email" name="email" placeholder="Nom"> <br>
+
+                                    <!-- <label for="cno">TÉLÉPHONE</label> <br>
+                                    <input type="tel" id="cno" name="contact no" placeholder="Nom"> <br> -->
+
+                                    <button>CRÉER UN NOUVEAU MOT DE PASSE</button>
+
+                                </form>
+
+                                <div class="btndiv">
+                                    <button onclick="app.current.saveAccount()">VALIDER</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ACCORDION 3 -->
+
+                    <div class="accordion_tab" id="payment">
+
+                        <input type="checkbox" id="toggle3" class="acc_toggle" name="toggle">
+                        <p class="acc_arrow">⌄</p>
+                        <label onclick="app.current.changeTab(event)" for="toggle3">MOYEN DE PAIEMENT</label>
+
+
+                        <div class="accordion_content acc3">
+                            <div class="part4 ">
+                                <div class="title">
+                                    <h3>INFORMATIONS DE PAIEMENT</h3>
+                                </div>
+
+                                <div class="img">
+                                    <img src="../img/payment.png" alt="">
+                                </div>
+                                <!------- form-------- -->
+
+                                <form>
+
+                                    <div>
+                                        <label for="iban">IBAN</label> <br>
+                                        <input type="text" id="iban" name="iban" placeholder="Nom"> <br>
+
+                                        <label for="niban">NOM IBAN</label> <br>
+                                        <input type="text" id="niban" name="nom iban" placeholder="Nom"> <br>
+                                    </div>
+
+                                    <div>
+                                        <label for="addf">ADRESSE FACTURATION</label> <br>
+                                        <input type="text" id="addf" name="address facturation" placeholder="Nom"> <br>
+
+                                        <label for="pcode">CODE POSTAL FACTURATION</label> <br>
+                                        <input type="number" id="pcode" name="postal facturation" placeholder="Nom">
+                                        <br>
+
+                                        <label for="villef">VILLE FACTURATION</label> <br>
+                                        <input type="text" id="villef" name="ville facturation" placeholder="Nom"> <br>
+
+                                        <label for="payf">PAYS FACTURATION</label> <br>
+                                        <input type="text" id="payf" name="ville facturation" placeholder="Nom"> <br>
+                                    </div>
+
+
+                                </form>
+
+                                <div class="btndiv">
+                                    <button onclick="app.current.savePayment()">VALIDER</button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ACCORDION 4 -->
+
+                    <div class="accordion_tab" id="offer">
+
+                        <input type="checkbox" id="toggle4" class="acc_toggle" name="toggle">
+                        <p class="acc_arrow">⌄</p>
+                        <label onclick="app.current.changeTab(event)" for="toggle4">ABONNEMENT</label>
+
+
+                        <div class="accordion_content">
+
+                            <div class="acc4">
+                                <h1>ACTIF</h1>
+                                <h3 id="offer-name">OFFRE N°1</h3>
+                                <div class="text">
+                                    <p>Vous avez souscrit a cet abonnement le XX/XX/XXXX</p>
+                                    <p>VOS AVANTAGES</p>
+                                    <div class="list">
+                                        <div>
+                                            <p> <span>✓</span> Lorem ipsum dolor sit amet</p>
+                                            <p> <span>✓</span> Lorem ipsum dolor sit amet</p>
+                                            <p> <span>✓</span> Lorem ipsum dolor sit amet</p>
+                                            <p> <span>✓</span> Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div>
+                                            <p> <span>✓</span> Lorem ipsum dolor sit amet</p>
+                                            <p> <span>✓</span> Lorem ipsum dolor sit amet</p>
+                                            <p> <span>✓</span> Lorem ipsum dolor sit amet</p>
+                                            <p> <span>✓</span> Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn">
+                                        <button>Factures</button>
+                                        <button>Changer</button>
+                                        <button>Résilier</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="icard">
+                                <p>VOUS AVEZ DES QUESTIONS ?</p>
+                                <p>Notre service support est disponible 24h/24 , 7j/7</p>
+                                <div class="btn">
+                                    <button onclick='window.open("http\:\/\/easy-as-pie.fr/contact.html", "_blank");'>CONTACT</button>
+                                    <button onclick='window.open("https\:\/\/www.ringover.me/EU_X6dGeNTCcDep7sI", "_blank");'>APPELER</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------popup---- -->
+
+            <!-- popup 1 -->
+            <div class="popup_bg hide">
+                <div class="popup_small ">
+
+                    <h1>CHANGER D’ABONNEMENT</h1>
+                    <p>Bla Bla bla bla bla Bla bla bla bla Bla bla bla bla Bla bla bla bla Bla bla bla bla Bla bla bla
+                        bla
+                    </p>
+                    <div class="part2 ">
+                        <!------- form-------- -->
+                        <div class="pricingform">
+                            <div class="cardcon">
+                                <div class="card">
+                                    <p>Price 2</p>
+                                    <p>$ 20.99 </p>
+                                    <p>10 users per month</p>
+                                    <div class="features">
+                                        <p> <span>✓</span> Auto Update</p>
+                                        <p> <span>✓</span> Online Support 24/7</p>
+                                        <p> <span>✓</span> New Feature</p>
+                                        <p> <span>✓</span> Unique Emails</p>
+                                        <p> <span>✓</span> Pipeline Templates</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <button>ANNULER</button>
+                        <button>VALIDER</button>
+                    </div>
+                </div>
+            </div>
+            <!-- popup 2 -->
+            <div class="popup_bg hide">
+                <div class="popup_small ">
+                    <img src="../img/icons/exclamation.png" alt="">
+                    <h1>RÉSILIER SON ABONNEMENT</h1>
+                    <p>Êtes vous sûr de vouloir supprimer la boisson sélectionnée ? Cette action est irréversible</p>
+                    <div class="btn">
+                        <button>OUI</button>
+                        <button>NON</button>
+                    </div>
+                </div>
+            </div>
+            <!-- popup 3 -->
+            <div class="popup_bg hide">
+                <div class="popup_small popup3 ">
+
+                    <h1>CRÉER UN NOUVEAU MOT DE PASSE</h1>
+                    <p>Entrez votre adresse mail ci-dessous et nous vous enverrons un lien de réinitialisation.</p>
+                    <form>
+                        <label for="nom">MAIL</label><br>
+                        <input type="email" placeholder="Nom">
+                    </form>
+                    <div class="btn">
+                        <button style="display: none;">OUI</button>
+                        <button>ENVOYER</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+

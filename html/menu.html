@@ -1,0 +1,31 @@
+
+
+<template id="item-tpl">
+
+    <div class="card" data-id="">
+        <h1 class="item-name"></h1>
+        <div>
+            <p class="item-desc"></p>
+            <p class="item-price"></p>
+        </div>
+        <div class="picon">
+            <div class="bin" onclick="app.current.deleteDrink(event)"><img src="../img/icons/Icon metro-bin.png" alt="bin"></div>
+            <div class="pencil" onclick="app.current.editDrinkForm(event)"><img src="../img/icons/Pencil.png" alt=""></div>
+        </div>
+    </div>
+</template>
+
+    <div class="cont">
+        <div class="carte_con">
+            <div class="carte">
+                <h1> <img src="../img/images/line.png" alt="">CARTE</h1>
+                <div class="btn">
+                    <button onclick="app.current.addDrinkForm()">AJOUTER UNE BOISSON </button>
+                    <button onclick="app.current.gestionCategorie()">GESTION DES CATÉGORIES</button>
+                </div>
+                <div class="cardrow" id="products">
+                </div>
+            </div>
+        </div>
+    </div>
+

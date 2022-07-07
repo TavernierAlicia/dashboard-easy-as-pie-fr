@@ -1,0 +1,63 @@
+    <!---------------------------- Main Container ---------------------------------->
+
+
+    <!----------------- Header ----------------------->
+
+    <div class="header">
+        <!------------- Navbar--------------- -->
+
+        <nav class="navbar">
+            <!--------- Logo Container--------- -->
+
+            <div class="logocon" onclick="location.href = 'http:\/\/dashboard.easy-as-pie.fr'">
+                <!-- logo -->
+
+                <div class="logo">
+                    <img src="../img/hlogo.png" alt="logo" />
+                </div>
+                <!-- logo text -->
+
+                <div class="logotext">
+                    <img src="../img/hlogotext.png" alt="text" />
+                    <img src="../img/hlogoline.png" alt="lineimg" />
+                </div>
+            </div>
+
+            <div class="links">
+                <!-- show hide class to toggle nav elements after login & active class to highlight current page  -->
+
+                <!--------- Before Login---------->
+                <div class="show">
+                    <li><a href="http://easy-as-pie.fr">ACCUEIL</a></li>
+                    <li><a class="" href="./signup.html">S’INSCRIRE</a></li>
+                    <li><a href="./login.html">SE CONNECTER</a></li>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="cont">
+        <div class=" signup_con ">
+            <div id="step">
+
+                <h1>CRÉATION DE VOTRE MOT DE PASSE</h1>
+                <!-- part 1 -->
+                <div class="part1 ">
+
+                    <!------- form-------- -->
+                    <form action="#" onsubmit="return false;">
+                        <label for="pass">MOT DE PASSE</label> <br>
+                        <input type="password" id="pwd1" name="pass" placeholder="Mot de passe"> <br>
+
+                        <label for="cpass">CONFIRMER LE MOT DE PASSE</label> <br>
+                        <input type="password" id="pwd2" name="pass" placeholder="Confirmer le mot de passe"> <br>
+                    </form>
+
+                    <div class="btndiv buttons">
+                        <button onclick="app.current.create()">FINIR L'INSCRIPTION</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>

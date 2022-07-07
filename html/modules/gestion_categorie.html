@@ -1,0 +1,29 @@
+<aside id="gestionCategorie" class="drink_popup">
+    
+    <div class="popup p3 ">
+        <h1>Gestion des catégories</h1>
+
+        <div>
+            <label>AJOUTER UNE CATÉGORIE</label>
+            <input type="text" id="add-cate-name" placeholder="Nom de la nouvelle catégorie">
+            <button onclick="app.current.addCategorie()">CRÉER</button><br>
+
+
+            <label>MODIFIER LE NOM D’UNE CATÉGORIE</label>
+            <select name="cat" id="edit-cate">
+                <option value="" disabled selected></option>
+            </select> <br>
+
+            <input type="text" placeholder="Nouveau nom" id="edit-cate-name">
+            <button onclick="app.current.editCategorie()">MODIFIER</button><br>
+
+            <label>SUPPRIMER UNE CATÉGORIE</label>
+            <select name="cat" id="remove-cate">
+                <option value="" disabled selected>Nom de catégorie</option>
+            </select> 
+
+            <button onclick="app.current.deleteCategorie()">SUPPRIMER</button>
+        </div>
+    </div>
+</aside>
+

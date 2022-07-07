@@ -1,0 +1,65 @@
+
+
+    <div class="cont">
+        <div class="home1_con">
+            <div class="home1">
+                <h1 style="color: #434371"> <img src="../img/line.png" alt=""> MES COMMANDES</h1>
+                <div class="btn" style="display: none"> 
+                    <button>SIGNALER UNE RUPTURE DE STOCK</button>
+                    <button>ACTIVER LE HAPPY HOUR</button>
+                </div>
+                <div class="cards_con">
+                    <!-- card1 -->
+
+                    <div class="cards">
+                        <h3> <img src="../img/Lineb.png" alt="line"> COMMANDES REÇUES</h3>
+
+                        <div class="cardbox" id="received_orders">
+
+                        </div>
+
+                    </div>
+
+                    <!-- card2 -->
+                    <div class="cards">
+                        <h3> <img src="../img/Lineb.png" alt="line"> À SERVIR</h3>
+
+                        <div class="cardbox" id="to_serve">
+
+                        </div>
+
+                    </div>
+
+                    <!-- card3 -->
+
+                    <div class="cards">
+                        <h3> <img src="../img/Lineb.png" alt="line"> SUR TABLE</h3>
+
+                        <div class="cardbox" id="on_table">
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <template id="card-tpl">
+        <div class="card1">
+            <div class="p1">
+                <p></p>
+                <p class="card-id"></p>
+            </div>
+            <div class="p2"></div>
+            <div class="p3">
+                <p>Total <span class="card-price"></span></p>
+                <p class="status"></p>
+                <p class="card-duration" data-creationdate="0"></p>
+            </div>
+        </div>
+    </template>
+

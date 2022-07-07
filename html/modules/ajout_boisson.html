@@ -1,0 +1,24 @@
+<aside id="ajoutBoisson" class="drink_popup">
+
+    <div class="popup p2">
+        <h1>AJOUTER UNE BOISSON</h1>
+        <div>
+            <select  id="add-drink-cate">
+                <option value="" disabled selected>CATÉGORIE DE BOISSON</option>
+            </select> <br>
+
+            <label>NOM</label>
+            <input type="text" id="add-drink-name" placeholder="Nom de la boisson">
+            
+            <label>DESCRIPTION</label>
+            <textarea cols="50" rows="3" id="add-drink-desc" placeholder="Description de la boisson"></textarea>
+
+            <label>Prix</label>
+            <input type="number" pattern="[0-9]+([\.,][0-9]+)?" step="0.01" id="add-drink-price" placeholder="€">
+
+            <label>Prix en Happy Hour</label>
+            <input type="number" pattern="[0-9]+([\.,][0-9]+)?" step="0.01" id="add-drink-price-hh" placeholder="€">
+        </div>
+        <button onclick="app.current.addDrink()">CRÉER</button>
+    </div>
+</aside>

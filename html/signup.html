@@ -1,0 +1,198 @@
+
+    <!---------------------------- Main Container ---------------------------------->
+    <div class="header">
+        <!------------- Navbar--------------- -->
+
+        <nav class="navbar">
+            <div class="logocon" onclick="location.href = 'http:\/\/dashboard.easy-as-pie.fr'">
+                <div class="logo">
+                    <img src="../img/hlogo.png" alt="logo" />
+                </div>
+                <div class="logotext">
+                    <img src="../img/hlogotext.png" alt="text" />
+                    <img src="../img/hlogoline.png" alt="lineimg" />
+                </div>
+            </div>
+            <div class="links">
+                <!-- show hide class to toggle nav elements after login & active class to highlight current page  -->
+                <!--------- Before Login---------->
+                <div class="show">
+                    <li><a  href="http://easy-as-pie.fr">ACCUEIL</a></li>
+                    <li><a class="active" href="/sign-up">S’INSCRIRE</a></li>
+                    <li><a href="/login">SE CONNECTER</a></li>
+                </div>
+                <!------------ After Login ---------->
+            </div>
+        </nav>
+    </div>
+
+    <div class="cont">
+        <div class="signup_con">
+            <div class="step1" id="step">
+
+                <h1>S’INSCRIRE</h1>
+                <!-- part 1 -->
+                <div class="part1 " id="step1">
+                    <div class="title">
+                        <h3>ÉTAPE 1 SUR 4</h3>
+                    </div>
+                    <!------- form-------- -->
+                    <form action="#" onsubmit="return false;">
+                        <div class="radiobtn">
+                            <p>CIVILITÉ</p>
+                            <div class="radio" id="civility">
+                                <input type="radio" id="monsieur" name="civility" value="M." checked><label for="monsieur">M.</label>
+                                <input type="radio" id="madame" name="civility" value="Mme." ><label for="madame">Mme.</label>
+                                <input type="radio" id="autre" name="civility" value="Autre" ><label for="autre">Autre</label>
+                            </div> 
+                        </div>
+
+
+                        <label for="fname">NOM</label> <br>
+                        <input type="text" id="nom" name="fname" onkeydown="app.current.changeFactAddress(this)" placeholder="Votre nom"> <br>
+
+                        <label for="lname">PRÉNOM</label> <br>
+                        <input type="text" id="prenom" name="lname" placeholder="Votre prénom"> <br>
+
+                        <label for="email">MAIL</label> <br>
+                        <input type="email" id="email" name="email" placeholder="Votre e-mail"> <br>
+
+                        <label for="cno">TÉLÉPHONE</label> <br>
+                        <input type="tel" id="phone" name="contact no" placeholder="Numéro de téléphone"> <br>
+
+                    </form>
+
+                    <div class="btndiv buttons">
+                        <button class="hidden">PRÉCÉDENT</button>
+                        <button onclick="app.current.step(2)">SUIVANT</button>
+                    </div>
+                </div>
+
+                <!-- part 2 -->
+                <div class="part2" id="step2">
+                    <div class="title">
+                        <h3>ÉTAPE 2 SUR 4</h3>
+                    </div>
+                    <!------- form-------- -->
+
+                    <div class="pricingform">
+                        <div class="cardcon plans">
+                            <div class="card plan" id="plan-1" onclick="app.current.choosePlan(this)">
+                                <p>Price 1</p>
+                                <p>$ 20.99 </p>
+                                <p>10 users per month</p>
+                                <div class="features">
+                                    <p> <span>✓</span> Auto Update</p>
+                                    <p> <span>✓</span> Online Support 24/7</p>
+                                    <p> <span>✓</span> New Feature</p>
+                                    <p> <span>✓</span> Unique Emails</p>
+                                    <p> <span>✓</span> Pipeline Templates</p>
+                                </div>
+
+                            </div>
+                            <div class="card plan" id="plan-2" onclick="app.current.choosePlan(this)">
+                                <p>Price 2</p>
+                                <p>$ 20.99 </p>
+                                <p>10 users per month</p>
+                                <div class="features">
+                                    <p> <span>✓</span> Auto Update</p>
+                                    <p> <span>✓</span> Online Support 24/7</p>
+                                    <p> <span>✓</span> New Feature</p>
+                                    <p> <span>✓</span> Unique Emails</p>
+                                    <p> <span>✓</span> Pipeline Templates</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="btndiv buttons">
+                        <button onclick="app.current.step(1)">PRÉCÉDENT</button>
+                        <button onclick="app.current.step(3)">SUIVANT</button>
+                    </div>
+                </div>
+
+                <!-- part 3 -->
+                <div class="part3" id="step3">
+                    <div class="title">
+                        <h3>ÉTAPE 3 SUR 4</h3>
+                    </div>
+                    <!------- form-------- -->
+                    <form action="#" onsubmit="return false;">
+                        <label for="bname">NOM DU BAR</label> <br>
+                        <input type="text" id="etabname" name="bname" placeholder="Nom de l'établissement"> <br>
+
+                        <label for="add">ADRESSE</label> <br>
+                        <input type="text" id="adresse" name="address" onkeydown="app.current.changeFactAddress(this)" placeholder="Adresse de l'établissement"> <br>
+
+                        <label for="code">CODE POSTAL</label> <br>
+                        <input type="number" id="zipcode" name="postal code" onkeydown="app.current.changeFactAddress(this)" placeholder="Code postal"> <br>
+
+                        <label for="ville">VILLE</label> <br>
+                        <input type="text" id="city" name="ville" onkeydown="app.current.changeFactAddress(this)" placeholder="Ville"> <br>
+
+                        <label for="pays">PAYS</label> <br>
+                        <select id="country" name="pays" onchange="app.current.changeCountry(this)">
+                            <option value="Belgique">Belgique</option>
+                            <option value="France" selected>France</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Suisse">Suisse</option>
+                        </select> <br>
+
+                        <label for="siret">SIRET</label> <br>
+                        <input type="text" id="siret" name="siret" placeholder="SIRET"> <br>
+
+                        <label for="lic">LICENCE</label> <br>
+                        <input type="text" id="licence" name="licence" placeholder="No de licence"> <br>
+
+                    </form>
+
+                    <div class="btndiv buttons">
+                        <button onclick="app.current.step(2)">PRÉCÉDENT</button>
+                        <button onclick="app.current.step(4)">SUIVANT</button>
+                    </div>
+
+                </div>
+
+                <!-- part 4 -->
+                <div class="part4 " id="step4">
+                    <div class="title">
+                        <h3>ÉTAPE 4 SUR 4</h3>
+                    </div>
+                    <!------- form-------- -->
+
+                    <form action="#" onsubmit="return false;">
+
+                        <label for="iban">IBAN</label> <br>
+                        <input type="text" id="iban" name="iban" placeholder="IBAN"> <br>
+
+                        <label for="niban">NOM IBAN</label> <br>
+                        <input type="text" id="fact_nom" name="niban" placeholder="Nom"> <br>
+
+                        <label for="addf">ADRESSE FACTURATION</label> <br>
+                        <input type="text" id="fact_adresse" name="addf" placeholder="Adresse"> <br>
+
+                        <label for="pcode">CODE POSTAL FACTURATION</label> <br>
+                        <input type="number" id="fact_zipcode" name="pcode" placeholder="Code postal"> <br>
+
+                        <label for="villef">VILLE FACTURATION</label> <br>
+                        <input type="text" id="fact_city" name="villef" placeholder="Ville"> <br>
+
+                        <label>PAYS</label> <br>
+                        <select id="fact_country" name="fact_country">
+                            <option value="Belgique">Belgique</option>
+                            <option value="France" selected>France</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Suisse">Suisse</option>
+                        </select>
+
+                    </form>
+
+                    <div class="btndiv buttons">
+                        <button onclick="app.current.step(3)">PRÉCÉDENT</button>
+                        <button onclick="app.current.go()">VALIDER</button>
+                    </div>
+            </div>
+        </div>
+    </div>

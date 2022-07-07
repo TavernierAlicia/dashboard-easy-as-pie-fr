@@ -1,0 +1,66 @@
+
+    <div class="cont">
+
+        <!-- Invoices Container -->
+        <div class="invoices_con">
+            <div class="table_wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#ID</th>
+                            <th>CLIENT</th>
+                            <th>DATE</th>
+                            <th>MONTANT</th>
+                            <th>STATUS</th>
+                            <th>DETAILS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list-fact">
+                    </tbody>
+                </table>
+            </div>
+            <div class="cs">
+                <div class="date_component">
+
+                    <div class="date">
+                        <label for="date1">DATE DE DÉBUT*</label>
+                        <input type="date" id="date1" name="date1">
+                    </div>
+                    <div class="date">
+                        <label for="date2">DATE DE FIN*</label>
+                        <input type="date" id="date2" name="date2" placeholder="">
+                    </div>
+                    <div>
+                        <button onclick="app.current.downloadCSV()">TÉLÉCHARGER</button>
+                    </div>
+
+                   
+                </div>
+                <p>*VOUS DEVEZ DÉFINIR UNE DATE POUR TÉLÉCHARGER LA LISTE</p>
+            </div>
+
+
+
+            <div class="icard">
+                <p>VOUS AVEZ DES QUESTIONS ?</p>
+                <p>Notre service support est disponible 24h/24 , 7j/7</p>
+                <div class="btn">
+                    <button onclick='window.open("http\:\/\/easy-as-pie.fr/contact.html", "_blank");'>CONTACT</button>
+                    <button onclick='window.open("https\:\/\/www.ringover.me/EU_X6dGeNTCcDep7sI", "_blank");'>APPELER</button>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- Invoice popup -->
+            
+                <div id="popup_fact" class="popup_big  hide">
+                    <button onclick="this.parentNode.classList.add('hide')">RETOUR</button>
+                </div>
+            
+        </div>
+    </div>
+
